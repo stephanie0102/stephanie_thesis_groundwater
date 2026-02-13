@@ -1,0 +1,17 @@
+# Data Acquisition & Processing
+hydropandas
+pandas
+numpy
+scipy
+
+# Deep Learning (ST-PatchTST & GAT)
+torch
+torch-geometric
+
+# Visualization
+matplotlib
+seaborn
+
+# General DS
+scikit-learn
+jupyter
