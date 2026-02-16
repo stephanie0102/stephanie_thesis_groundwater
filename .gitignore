@@ -1,1 +1,8 @@
-Data/raw/brogmkenset.gpkg
+.DS_Store
+.DS_Store?
+**/ .DS_Store
+**/.DS_Store
+Data/processed/*.parquet
+Data/raw/*.gpkg
+*.gpkg
+*.parquet
