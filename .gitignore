@@ -6,3 +6,4 @@ Data/processed/*.parquet
 Data/raw/*.gpkg
 *.gpkg
 *.parquet
+.DS_Store
