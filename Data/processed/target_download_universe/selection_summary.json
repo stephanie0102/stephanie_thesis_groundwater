@@ -1,0 +1,26 @@
+{
+  "region_bbox": [
+    4.55,
+    52.2,
+    5.15,
+    52.5
+  ],
+  "target_distance_meters": 50.0,
+  "min_first_date": "2010-01-01",
+  "min_last_date": "2020-01-01",
+  "bbox_tubes_with_series": 7911,
+  "bbox_wells_with_series": 6955,
+  "all_tubes_with_use_context": 7911,
+  "selected_tubes": 113,
+  "selected_wells": 102,
+  "selected_glds": 207,
+  "downloaded_cache_files": 206,
+  "empty_cache_files": 1,
+  "error_cache_files": 0,
+  "facility_points_bbox": 6282,
+  "facility_objects_bbox": 3417,
+  "realised_well_points_bbox": 1238,
+  "realised_wells_bbox": 1235,
+  "design_well_points_bbox": 1153,
+  "design_wells_bbox": 1134
+}
