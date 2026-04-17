@@ -1,0 +1,5 @@
+group,features
+shared transfer features,"tsmp_wtda, pr_a, sm_a, tsmp_wtda_lag1, tsmp_wtda_lag2, tsmp_wtda_lag3, pr_a_lag1, pr_a_lag2, pr_a_lag3, sm_a_lag1, sm_a_lag2, sm_a_lag3, month_sin, month_cos"
+target context features,"wtda, pumping_m3_month_log1p, lon_norm, lat_norm"
+comparison features used by RF and deep models,"tsmp_wtda, pr_a, sm_a, tsmp_wtda_lag1, tsmp_wtda_lag2, tsmp_wtda_lag3, pr_a_lag1, pr_a_lag2, pr_a_lag3, sm_a_lag1, sm_a_lag2, sm_a_lag3, month_sin, month_cos, wtda, pumping_m3_month_log1p, lon_norm, lat_norm"
+bookkeeping / target columns,"site_id, cell_id, month, target_month, split, y_target"

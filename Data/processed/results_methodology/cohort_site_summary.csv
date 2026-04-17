@@ -1,0 +1,36 @@
+cohort_key,cohort_label,model_family,n_wells,mean_site_rmse,median_site_rmse,rank_mean_site_rmse
+all_wells,All wells,Context-Aware Selective Learning,97,1.1014549787511532,0.912316620349884,1.0
+all_wells,All wells,Random Forest,97,1.1240963701063729,0.9322341561463866,2.0
+all_wells,All wells,Site-Hard Expert Selector,97,1.1262886872400104,0.9370984543267005,3.0
+all_wells,All wells,Deep Context LSTM (Always TL),97,1.1437650405869042,0.9555148482322693,4.0
+all_wells,All wells,Deep Context LSTM (No TL),97,1.1539037126241272,0.976800799369812,5.0
+all_wells,All wells,Baseline LSTM (No TL),97,1.1919806000498152,0.9739030599594116,6.0
+all_wells,All wells,Baseline LSTM (TL),97,1.2012511986432617,0.9671897292137146,7.0
+high_overlap_q75,High overlap,Context-Aware Selective Learning,28,1.0346537636859077,0.8835364878177643,1.0
+high_overlap_q75,High overlap,Random Forest,28,1.0418944516889905,0.9098150160849652,2.0
+high_overlap_q75,High overlap,Site-Hard Expert Selector,28,1.046412030788519,0.8908929240103702,3.0
+high_overlap_q75,High overlap,Deep Context LSTM (Always TL),28,1.0710007952792304,0.9124576449394226,4.0
+high_overlap_q75,High overlap,Deep Context LSTM (No TL),28,1.078198868249144,0.9070582091808319,5.0
+high_overlap_q75,High overlap,Baseline LSTM (TL),28,1.1997724963085992,1.0497905015945435,6.0
+high_overlap_q75,High overlap,Baseline LSTM (No TL),28,1.2000461284603392,1.097737193107605,7.0
+high_similarity_q75,High similarity,Context-Aware Selective Learning,25,0.9061557137966156,0.8868070840835571,1.0
+high_similarity_q75,High similarity,Random Forest,25,0.9513373689704001,0.9030078683664378,2.0
+high_similarity_q75,High similarity,Site-Hard Expert Selector,25,0.9580002293892832,0.8313894207771718,3.0
+high_similarity_q75,High similarity,Deep Context LSTM (Always TL),25,0.9656375432014466,0.8783954977989197,4.0
+high_similarity_q75,High similarity,Deep Context LSTM (No TL),25,0.9900654733181,0.9200341105461121,5.0
+high_similarity_q75,High similarity,Baseline LSTM (No TL),25,1.0388052892684936,0.8234014511108398,6.0
+high_similarity_q75,High similarity,Baseline LSTM (TL),25,1.0607329249382018,0.868389368057251,7.0
+history_rich_q75,History-rich,Context-Aware Selective Learning,28,1.0346537636859077,0.8835364878177643,1.0
+history_rich_q75,History-rich,Random Forest,28,1.0418944516889905,0.9098150160849652,2.0
+history_rich_q75,History-rich,Site-Hard Expert Selector,28,1.046412030788519,0.8908929240103702,3.0
+history_rich_q75,History-rich,Deep Context LSTM (Always TL),28,1.0710007952792304,0.9124576449394226,4.0
+history_rich_q75,History-rich,Deep Context LSTM (No TL),28,1.078198868249144,0.9070582091808319,5.0
+history_rich_q75,History-rich,Baseline LSTM (TL),28,1.1997724963085992,1.0497905015945435,6.0
+history_rich_q75,History-rich,Baseline LSTM (No TL),28,1.2000461284603392,1.097737193107605,7.0
+transfer_ready_q75,Transfer-ready,Random Forest,4,0.6780380320338624,0.7262617050382967,1.0
+transfer_ready_q75,Transfer-ready,Context-Aware Selective Learning,4,0.6781992167234421,0.7345329523086548,2.0
+transfer_ready_q75,Transfer-ready,Site-Hard Expert Selector,4,0.6911807857387994,0.7442826593325886,3.0
+transfer_ready_q75,Transfer-ready,Deep Context LSTM (Always TL),4,0.697695717215538,0.7686647176742554,4.0
+transfer_ready_q75,Transfer-ready,Baseline LSTM (TL),4,0.70020692050457,0.6522930562496185,5.0
+transfer_ready_q75,Transfer-ready,Baseline LSTM (No TL),4,0.7146125882863998,0.6505430042743683,6.0
+transfer_ready_q75,Transfer-ready,Deep Context LSTM (No TL),4,0.8387662544846535,0.7959373891353607,7.0

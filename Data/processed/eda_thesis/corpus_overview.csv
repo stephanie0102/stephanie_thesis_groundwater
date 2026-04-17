@@ -3,9 +3,9 @@ region_name,amsterdam
 target_sites,102
 target_wells,102
 local_sites_with_series,102
-local_site_month_rows,22100
-aligned_sites,102
-aligned_site_month_rows,11504
+local_site_month_rows,22102
+model_panel_sites,102
+model_panel_rows,11508
 source_cells,512
-pairwise_source_target_comparisons,52224
-downloaded_glds,192
+pairwise_source_target_rows,52224
+pairwise_source_target_sites,102

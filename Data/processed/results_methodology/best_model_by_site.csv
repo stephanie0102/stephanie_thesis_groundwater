@@ -1,0 +1,8 @@
+model_family,best_site_count,share_of_sites
+Random Forest,24,0.24
+Deep Context LSTM (Always TL),21,0.21
+Baseline LSTM (No TL),15,0.15
+Context-Aware Selective Learning,15,0.15
+Baseline LSTM (TL),12,0.12
+Deep Context LSTM (No TL),9,0.09
+Site-Hard Expert Selector,4,0.04

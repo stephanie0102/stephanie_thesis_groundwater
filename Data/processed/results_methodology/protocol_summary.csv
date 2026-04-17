@@ -1,0 +1,3 @@
+dataset,rows,units,unit_type,target_month_start,target_month_end,train_rows,val_rows,cal_rows,test_rows
+source pretrain table,125952,512,source cells,1996-07-01,2016-12-01,75264,18432,12288,19968
+target finetune table,11504,102,target wells,1996-07-01,2016-12-01,6332,1794,1302,2076
