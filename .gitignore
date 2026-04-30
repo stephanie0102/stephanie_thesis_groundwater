@@ -1,9 +1,14 @@
 .DS_Store
-.DS_Store?
-**/ .DS_Store
 **/.DS_Store
-Data/processed/*.parquet
+
+.cache/
+__pycache__/
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+/baseline/
+
+*.nbconvert.ipynb
+
 Data/raw/*.gpkg
 *.gpkg
 *.parquet
-.DS_Store

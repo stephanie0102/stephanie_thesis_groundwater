@@ -1,3 +1,6 @@
+# Reference package list used in the local thesis environment.
+# This file is not a locked reproducible environment specification.
+
 # Data Acquisition & Processing
 hydropandas
 pandas
