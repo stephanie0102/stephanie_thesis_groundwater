@@ -5,7 +5,7 @@ target_wells,102
 local_sites_with_series,102
 local_site_month_rows,22102
 model_panel_sites,102
-model_panel_rows,11508
+model_panel_rows,11348
 source_cells,512
 pairwise_source_target_rows,52224
 pairwise_source_target_sites,102

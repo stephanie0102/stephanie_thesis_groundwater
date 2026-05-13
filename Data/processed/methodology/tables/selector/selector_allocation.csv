@@ -1,4 +1,3 @@
 path,observations,wells,mean_similarity
-Deep Context LSTM (Always TL),684,97,0.36151132073529413
-Deep Context LSTM (No TL),567,96,0.36069898407871204
-Random Forest,825,97,0.3630637723304563
+Deep Context LSTM (Always TL),1070,85,0.37382774775723854
+Deep Context LSTM (No TL),964,78,0.3323024053702407

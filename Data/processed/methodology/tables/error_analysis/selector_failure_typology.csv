@@ -1,0 +1,5 @@
+selected_parent,test_best_parent,selector_failure_type,sites,mean_site_hard_rmse,mean_gap_vs_test_best_parent,median_gap_vs_test_best_parent,share_of_sites
+Deep Context LSTM (Always TL),Deep Context LSTM (Always TL),selected_test_best_parent,43,1.667693797341335,8.419224967064177e-09,1.888287137763456e-09,0.43434343434343436
+Deep Context LSTM (No TL),Deep Context LSTM (No TL),selected_test_best_parent,14,1.2528057420502332,2.803062385378244e-10,-4.092138017330882e-09,0.1414141414141414
+Deep Context LSTM (Always TL),Deep Context LSTM (No TL),selected_test_worse_parent,28,1.339575909996136,0.05955207120360752,0.041757286532473015,0.2828282828282828
+Deep Context LSTM (No TL),Deep Context LSTM (Always TL),selected_test_worse_parent,14,1.160484314269694,0.06120755447491386,0.03642343430129269,0.1414141414141414
