@@ -1,0 +1,2 @@
+selected_source_filter,selected_tau,selection_metric,tie_breaker,n_source_cells_kept,test_rmse_selective_at_selected,previous_main_run_tau,previous_main_run_test_rmse_selective,note
+maxsim0.40,0.4,validation RMSE of Context-Aware Selective Learning,calibration RMSE,133,2.092473566214201,0.6,2.0956903832324674,Source filter chosen by validation/calibration on the Netherlands target. Not inherited from Amsterdam.

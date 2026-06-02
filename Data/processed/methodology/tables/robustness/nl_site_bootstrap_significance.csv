@@ -1,0 +1,7 @@
+comparison,mean_delta_rmse,ci_low_2.5pct,ci_high_97.5pct,prob_delta_lt_0_selective_better,ci_excludes_zero_in_favor_of_selective,n_bootstrap
+Context-Aware Selective Learning − Site-Hard Expert Selector,-0.0043,-0.0084,-0.00193,1.0,True,1000
+Context-Aware Selective Learning − Deep Context LSTM (No TL),-0.0145,-0.02176,-0.0089,1.0,True,1000
+Context-Aware Selective Learning − Deep Context LSTM (Always TL),-0.00604,-0.01031,-0.00116,0.993,True,1000
+Context-Aware Selective Learning − Random Forest,-0.05485,-0.16416,0.03206,0.735,False,1000
+Context-Aware Selective Learning − Baseline LSTM (No TL),-0.23143,-0.33076,-0.13671,1.0,True,1000
+Context-Aware Selective Learning − Baseline LSTM (TL),-0.25263,-0.36095,-0.14465,1.0,True,1000

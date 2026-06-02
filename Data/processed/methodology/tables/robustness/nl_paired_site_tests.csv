@@ -1,0 +1,7 @@
+comparison,n_sites,median_per_site_rmse_diff,mean_per_site_rmse_diff,n_selective_better,n_selective_worse,n_tie,wilcoxon_statistic,p_value_two_sided,test,p_holm,significant_holm_0.05
+Context-Aware Selective Learning vs Site-Hard Expert Selector,496,-0.00952,-0.00969,331,165,0,38646.0,6.193967394265983e-13,Wilcoxon signed-rank,0.0,True
+Context-Aware Selective Learning vs Deep Context LSTM (No TL),496,-0.02434,-0.02125,369,127,0,26184.0,1.2791722611240893e-28,Wilcoxon signed-rank,0.0,True
+Context-Aware Selective Learning vs Deep Context LSTM (Always TL),496,-0.00945,-0.01071,324,172,0,39001.0,1.3905926946446798e-12,Wilcoxon signed-rank,0.0,True
+Context-Aware Selective Learning vs Random Forest,496,0.0699,0.05099,163,333,0,33581.0,1.6045032234556246e-18,Wilcoxon signed-rank,0.0,True
+Context-Aware Selective Learning vs Baseline LSTM (No TL),496,-0.0177,-0.13465,262,234,0,46417.0,1.9084840331320313e-06,Wilcoxon signed-rank,2e-06,True
+Context-Aware Selective Learning vs Baseline LSTM (TL),496,-0.01779,-0.14745,258,238,0,46038.0,1.05253203993586e-06,Wilcoxon signed-rank,2e-06,True

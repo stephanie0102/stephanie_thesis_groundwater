@@ -1,6 +1,6 @@
 cohort_key,cohort_label,description,threshold_value,n_wells
-all_wells,All wells,Full Amsterdam test cohort,,97
-high_similarity_q75,High similarity,Best-match cosine similarity >= 75th percentile,0.4014396330001633,25
-high_overlap_q75,High overlap,Best-match overlap months >= 75th percentile,77.0,26
-history_rich_q75,History-rich,Training rows >= 75th percentile,69.0,26
-transfer_ready_q75,Transfer-ready,High similarity and high overlap,,2
+all_wells,All wells,Full Netherlands test cohort,,494
+high_similarity_q75,High similarity,Best-match cosine similarity >= 75th percentile,0.3877213075,124
+high_overlap_q75,High overlap,Best-match overlap months >= 75th percentile,139.0,145
+history_rich_q75,History-rich,Training rows >= 75th percentile,131.0,145
+transfer_ready_q75,Transfer-ready,High similarity and high overlap,,33

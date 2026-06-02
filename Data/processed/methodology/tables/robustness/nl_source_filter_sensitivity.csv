@@ -1,0 +1,9 @@
+source_filter_label,tau,n_source_cells_kept,share_of_source_cells_kept,n_target_wells_with_match,share_target_wells_with_match,val_rmse_selective,cal_rmse_selective,test_rmse_selective,ran_full_model_pipeline,validation_selected_for_main_run
+no_filter,,512,1.0,496,1.0,1.5909208730781528,2.056101497401027,2.072162650783005,True,False
+maxsim0.30,0.3,288,0.5625,299,0.6028,,,,False,False
+maxsim0.35,0.35,198,0.3867,191,0.3851,,,,False,False
+maxsim0.40,0.4,133,0.2598,108,0.2177,1.589613839286302,2.058276041548876,2.092473566214201,True,True
+maxsim0.45,0.45,76,0.1484,67,0.1351,,,,False,False
+maxsim0.50,0.5,34,0.0664,31,0.0625,1.590279109497105,2.050570929505335,2.064445040857516,True,False
+maxsim0.55,0.55,12,0.0234,9,0.0181,,,,False,False
+maxsim0.60,0.6,1,0.002,1,0.002,1.590164489634786,2.05814387058257,2.095690383232468,True,False

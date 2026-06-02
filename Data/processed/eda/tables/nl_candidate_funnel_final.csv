@@ -1,0 +1,11 @@
+stage,count
+01_full_national_gm_gld_series_with_csv_urls,112627
+02_after_temporal_filter_first<=2005_last>=2014_obs>=500,2102
+03_one_tube_per_well_deduplicated,1280
+04_attempted_downloads_uncapped,1280
+05_successful_downloads_or_cached,1118
+06_with_>=24_monthly_anomaly_rows,754
+07_in_supervised_H3_table,754
+08_final_modelling_after_train_and_test_survival_filter,496
+09_with_test_window_rows,496
+10_test_window_count,16547

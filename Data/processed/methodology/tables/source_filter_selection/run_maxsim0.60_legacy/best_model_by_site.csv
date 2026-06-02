@@ -1,0 +1,5 @@
+model_family,best_site_count,share_of_sites
+Random Forest,320,0.6451612903225806
+Deep Context LSTM (Always TL),113,0.22782258064516128
+Context-Aware Selective Learning,35,0.07056451612903226
+Deep Context LSTM (No TL),28,0.056451612903225805

@@ -52,9 +52,3 @@ My main question is whether Amsterdam forecasting should use no transfer, fixed 
 1. Run `Code/Exploratory Data Analysis.ipynb`.
 2. Run `Code/Methodology.ipynb`.
 3. Run `Code/Results.ipynb`.
-
-## Environment
-
-I run this project in my local conda environment called `thesis`.
-
-This is the environment I use for all three notebooks. The `requirements.txt` file is only a short reference list of the main packages that I use. It is not a locked environment file, so I do not claim that a fresh install from `requirements.txt` will fully reproduce my setup.

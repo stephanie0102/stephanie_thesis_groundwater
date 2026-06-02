@@ -1,0 +1,9 @@
+source_filter_label,tau,n_source_cells_kept,share_of_source_cells_kept,n_target_wells_with_match,share_target_wells_with_match,sim_mean_kept,sim_median_kept,sim_max_kept,source_pool_likely_too_small,used_in_previous_main_run
+no_filter,,512,1.0,496,1.0,0.0098,0.0121,0.6024,False,False
+maxsim0.30,0.3,288,0.5625,299,0.6028,0.3603,0.344,0.6024,False,False
+maxsim0.35,0.35,198,0.3867,191,0.3851,0.4056,0.3909,0.6024,False,False
+maxsim0.40,0.4,133,0.2598,108,0.2177,0.449,0.4361,0.6024,False,False
+maxsim0.45,0.45,76,0.1484,67,0.1351,0.492,0.4818,0.6024,False,False
+maxsim0.50,0.5,34,0.0664,31,0.0625,0.5336,0.5275,0.6024,False,False
+maxsim0.55,0.55,12,0.0234,9,0.0181,0.5731,0.5719,0.6024,False,False
+maxsim0.60,0.6,1,0.002,1,0.002,0.6024,0.6024,0.6024,True,True

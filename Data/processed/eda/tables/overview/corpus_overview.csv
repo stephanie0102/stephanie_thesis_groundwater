@@ -1,11 +1,13 @@
 metric,value
-region_name,amsterdam
-target_sites,102
-target_wells,102
-local_sites_with_series,102
-local_site_month_rows,22102
-model_panel_sites,102
-model_panel_rows,11348
+region_name,netherlands
+target_run_label,full_national_mode_A
+target_scope_wording,all eligible Dutch BRO wells under the 1996-2016 modelling constraints
+target_sites,496
+target_wells,496
+local_sites_with_series,754
+local_site_month_rows,119554
+model_panel_sites,496
+model_panel_rows,100472
 source_cells,512
-pairwise_source_target_rows,52224
-pairwise_source_target_sites,102
+pairwise_source_target_rows,253952
+pairwise_source_target_sites,496

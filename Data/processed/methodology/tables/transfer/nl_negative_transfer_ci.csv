@@ -1,0 +1,5 @@
+metric,numerator,denominator,rate,wilson_ci_low,wilson_ci_high,method
+always_tl_help_rate_over_all_sites,289,496,0.5827,0.5388,0.6253,Wilson 95% CI
+always_tl_harm_rate_over_all_sites,207,496,0.4173,0.3747,0.4612,Wilson 95% CI
+selective_partial_rescue_rate_on_harmed_sites,205,207,0.9903,0.9655,0.9973,Wilson 95% CI
+selective_full_rescue_rate_on_harmed_sites,80,207,0.3865,0.3228,0.4543,Wilson 95% CI

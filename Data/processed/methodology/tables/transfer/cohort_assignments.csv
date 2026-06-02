@@ -1,177 +1,942 @@
 site_id,cosine_similarity,months_used,train_rows,cohort_key,cohort_label
-9687,0.5164027169479909,15,7,all_wells,All wells
-9941,0.3142923106641062,80,72,all_wells,All wells
-10385,0.480607508953269,102,94,all_wells,All wells
-18022,0.6689914496754387,7,0,all_wells,All wells
-18027,0.6327108188338818,7,0,all_wells,All wells
-18055,0.6970632293579688,7,0,all_wells,All wells
-18086,0.7059975008578142,7,0,all_wells,All wells
-29249,0.2313194557414356,75,67,all_wells,All wells
-29263,0.2044805100845467,68,60,all_wells,All wells
-29357,0.2864358033742457,75,67,all_wells,All wells
-29366,0.3377721494601169,72,64,all_wells,All wells
-29373,0.2921897345761352,71,63,all_wells,All wells
-29419,0.2448325425026823,75,67,all_wells,All wells
-29465,0.2725819736766368,33,25,all_wells,All wells
-29476,0.2326240328680085,71,63,all_wells,All wells
-29532,0.4024784395073418,68,60,all_wells,All wells
-29570,0.3421321400034778,72,64,all_wells,All wells
-29599,0.2153524076743459,74,66,all_wells,All wells
-29680,0.4012531771337347,75,67,all_wells,All wells
-29708,0.1682476996924483,71,63,all_wells,All wells
-29740,0.3359787396613567,41,33,all_wells,All wells
-29756,0.2840965925423487,76,68,all_wells,All wells
-29794,0.2662051569624913,68,60,all_wells,All wells
-29812,0.1740840862648924,86,78,all_wells,All wells
-29828,0.42747758400553,17,9,all_wells,All wells
-29829,0.2286451568028934,71,63,all_wells,All wells
-29848,0.2808173153693233,83,75,all_wells,All wells
-29861,0.3355513103483594,41,33,all_wells,All wells
-29908,0.2417439183507923,71,63,all_wells,All wells
-29931,0.2090048738031979,87,79,all_wells,All wells
-29961,0.2578958558557591,72,64,all_wells,All wells
-29971,0.7598189715424323,5,0,all_wells,All wells
-29982,0.3856237133699691,77,69,all_wells,All wells
-29997,0.9618871030219815,2,0,all_wells,All wells
-30035,0.2393992352931255,75,67,all_wells,All wells
-30066,0.2394052771324135,130,122,all_wells,All wells
-30104,0.2683060801742258,78,70,all_wells,All wells
-30225,0.2364083055262628,73,65,all_wells,All wells
-30247,0.4535767109363982,14,6,all_wells,All wells
-30249,0.3529165904247521,60,52,all_wells,All wells
-30265,0.3071128565708469,78,70,all_wells,All wells
-30341,0.2239436793913754,73,65,all_wells,All wells
-30380,0.4560732402212433,16,8,all_wells,All wells
-30385,0.40068251666973,73,65,all_wells,All wells
-30425,0.2203401323365955,90,82,all_wells,All wells
-30427,0.3315279257061451,76,68,all_wells,All wells
-30474,0.2856997614146833,73,65,all_wells,All wells
-30578,0.2574000183906373,87,79,all_wells,All wells
-30586,0.2346742391695835,81,73,all_wells,All wells
-30638,0.4315201556105119,41,33,all_wells,All wells
-30656,0.3351033057095524,59,51,all_wells,All wells
-30760,0.5014273475994847,81,73,all_wells,All wells
-30788,0.4529314843133312,29,21,all_wells,All wells
-30795,0.2602363511875191,83,75,all_wells,All wells
-30808,0.2943541335644693,72,64,all_wells,All wells
-30832,0.3250454299546482,74,66,all_wells,All wells
-30868,0.3431901349353138,87,79,all_wells,All wells
-30919,0.2646417749009837,70,62,all_wells,All wells
-30981,0.8162664275402916,7,0,all_wells,All wells
-31008,0.2059614067594054,76,68,all_wells,All wells
-31022,0.3294555151060775,71,63,all_wells,All wells
-31032,0.2636682972421019,93,85,all_wells,All wells
-31064,0.218457742370273,80,72,all_wells,All wells
-31247,0.4737485867047974,25,17,all_wells,All wells
-31257,0.4129247468850993,72,64,all_wells,All wells
-31324,0.2564488067153664,87,79,all_wells,All wells
-31343,0.2330341428190487,73,65,all_wells,All wells
-31403,0.2742846927931101,77,69,all_wells,All wells
-31425,0.2752363508523265,96,88,all_wells,All wells
-31482,0.2441233946526222,107,99,all_wells,All wells
-31515,0.3169645616030967,74,66,all_wells,All wells
-31528,0.2957879499198765,38,30,all_wells,All wells
-31541,0.2782445110558652,84,76,all_wells,All wells
-31543,0.2502366741657179,75,67,all_wells,All wells
-31567,0.2052698862969781,73,65,all_wells,All wells
-31593,0.4659692585536497,25,17,all_wells,All wells
-31631,0.3100897666623181,72,64,all_wells,All wells
-31642,0.3297303308859316,19,11,all_wells,All wells
-31683,0.3403063554027605,66,58,all_wells,All wells
-31688,0.2824631778601335,74,66,all_wells,All wells
-31696,0.2414190800878651,89,81,all_wells,All wells
-31792,0.4182770546840869,18,10,all_wells,All wells
-31854,0.2157512956405084,77,69,all_wells,All wells
-31920,0.3824628209196696,76,68,all_wells,All wells
-31933,0.3192772290631208,82,74,all_wells,All wells
-31939,0.2905960710582531,76,68,all_wells,All wells
-31988,0.3244519552988173,73,65,all_wells,All wells
-31997,0.2823290557844647,70,62,all_wells,All wells
-32135,0.4307114653467599,17,9,all_wells,All wells
-32138,0.4014396330001633,71,63,all_wells,All wells
-32189,0.2039422394732542,76,68,all_wells,All wells
-32219,0.3006881732294162,61,53,all_wells,All wells
-32332,0.1943823791186055,72,64,all_wells,All wells
-32804,0.4064214847624843,47,39,all_wells,All wells
-33050,0.3464922704615514,109,101,all_wells,All wells
-104122,0.4558088915754938,52,44,all_wells,All wells
-104211,0.4851423933997395,48,40,all_wells,All wells
-9687,0.5164027169479909,15,7,high_similarity_q75,High similarity
-10385,0.480607508953269,102,94,high_similarity_q75,High similarity
-18022,0.6689914496754387,7,0,high_similarity_q75,High similarity
-18027,0.6327108188338818,7,0,high_similarity_q75,High similarity
-18055,0.6970632293579688,7,0,high_similarity_q75,High similarity
-18086,0.7059975008578142,7,0,high_similarity_q75,High similarity
-29532,0.4024784395073418,68,60,high_similarity_q75,High similarity
-29828,0.42747758400553,17,9,high_similarity_q75,High similarity
-29971,0.7598189715424323,5,0,high_similarity_q75,High similarity
-29997,0.9618871030219815,2,0,high_similarity_q75,High similarity
-30247,0.4535767109363982,14,6,high_similarity_q75,High similarity
-30380,0.4560732402212433,16,8,high_similarity_q75,High similarity
-30638,0.4315201556105119,41,33,high_similarity_q75,High similarity
-30760,0.5014273475994847,81,73,high_similarity_q75,High similarity
-30788,0.4529314843133312,29,21,high_similarity_q75,High similarity
-30981,0.8162664275402916,7,0,high_similarity_q75,High similarity
-31247,0.4737485867047974,25,17,high_similarity_q75,High similarity
-31257,0.4129247468850993,72,64,high_similarity_q75,High similarity
-31593,0.4659692585536497,25,17,high_similarity_q75,High similarity
-31792,0.4182770546840869,18,10,high_similarity_q75,High similarity
-32135,0.4307114653467599,17,9,high_similarity_q75,High similarity
-32138,0.4014396330001633,71,63,high_similarity_q75,High similarity
-32804,0.4064214847624843,47,39,high_similarity_q75,High similarity
-104122,0.4558088915754938,52,44,high_similarity_q75,High similarity
-104211,0.4851423933997395,48,40,high_similarity_q75,High similarity
-9941,0.3142923106641062,80,72,high_overlap_q75,High overlap
-10385,0.480607508953269,102,94,high_overlap_q75,High overlap
-29812,0.1740840862648924,86,78,high_overlap_q75,High overlap
-29848,0.2808173153693233,83,75,high_overlap_q75,High overlap
-29931,0.2090048738031979,87,79,high_overlap_q75,High overlap
-29982,0.3856237133699691,77,69,high_overlap_q75,High overlap
-30066,0.2394052771324135,130,122,high_overlap_q75,High overlap
-30104,0.2683060801742258,78,70,high_overlap_q75,High overlap
-30265,0.3071128565708469,78,70,high_overlap_q75,High overlap
-30425,0.2203401323365955,90,82,high_overlap_q75,High overlap
-30578,0.2574000183906373,87,79,high_overlap_q75,High overlap
-30586,0.2346742391695835,81,73,high_overlap_q75,High overlap
-30760,0.5014273475994847,81,73,high_overlap_q75,High overlap
-30795,0.2602363511875191,83,75,high_overlap_q75,High overlap
-30868,0.3431901349353138,87,79,high_overlap_q75,High overlap
-31032,0.2636682972421019,93,85,high_overlap_q75,High overlap
-31064,0.218457742370273,80,72,high_overlap_q75,High overlap
-31324,0.2564488067153664,87,79,high_overlap_q75,High overlap
-31403,0.2742846927931101,77,69,high_overlap_q75,High overlap
-31425,0.2752363508523265,96,88,high_overlap_q75,High overlap
-31482,0.2441233946526222,107,99,high_overlap_q75,High overlap
-31541,0.2782445110558652,84,76,high_overlap_q75,High overlap
-31696,0.2414190800878651,89,81,high_overlap_q75,High overlap
-31854,0.2157512956405084,77,69,high_overlap_q75,High overlap
-31933,0.3192772290631208,82,74,high_overlap_q75,High overlap
-33050,0.3464922704615514,109,101,high_overlap_q75,High overlap
-9941,0.3142923106641062,80,72,history_rich_q75,History-rich
-10385,0.480607508953269,102,94,history_rich_q75,History-rich
-29812,0.1740840862648924,86,78,history_rich_q75,History-rich
-29848,0.2808173153693233,83,75,history_rich_q75,History-rich
-29931,0.2090048738031979,87,79,history_rich_q75,History-rich
-29982,0.3856237133699691,77,69,history_rich_q75,History-rich
-30066,0.2394052771324135,130,122,history_rich_q75,History-rich
-30104,0.2683060801742258,78,70,history_rich_q75,History-rich
-30265,0.3071128565708469,78,70,history_rich_q75,History-rich
-30425,0.2203401323365955,90,82,history_rich_q75,History-rich
-30578,0.2574000183906373,87,79,history_rich_q75,History-rich
-30586,0.2346742391695835,81,73,history_rich_q75,History-rich
-30760,0.5014273475994847,81,73,history_rich_q75,History-rich
-30795,0.2602363511875191,83,75,history_rich_q75,History-rich
-30868,0.3431901349353138,87,79,history_rich_q75,History-rich
-31032,0.2636682972421019,93,85,history_rich_q75,History-rich
-31064,0.218457742370273,80,72,history_rich_q75,History-rich
-31324,0.2564488067153664,87,79,history_rich_q75,History-rich
-31403,0.2742846927931101,77,69,history_rich_q75,History-rich
-31425,0.2752363508523265,96,88,history_rich_q75,History-rich
-31482,0.2441233946526222,107,99,history_rich_q75,History-rich
-31541,0.2782445110558652,84,76,history_rich_q75,History-rich
-31696,0.2414190800878651,89,81,history_rich_q75,History-rich
-31854,0.2157512956405084,77,69,history_rich_q75,History-rich
-31933,0.3192772290631208,82,74,history_rich_q75,History-rich
-33050,0.3464922704615514,109,101,history_rich_q75,History-rich
-10385,0.480607508953269,102,94,transfer_ready_q75,Transfer-ready
-30760,0.5014273475994847,81,73,transfer_ready_q75,Transfer-ready
+9698,0.33242345,128,120,all_wells,All wells
+9799,0.3005144,126,118,all_wells,All wells
+9802,0.45781997,141,133,all_wells,All wells
+9804,0.21820317,108,100,all_wells,All wells
+9822,0.29423472,141,133,all_wells,All wells
+9840,0.34132978,123,115,all_wells,All wells
+9844,0.25681362,140,132,all_wells,All wells
+9853,0.54366064,137,129,all_wells,All wells
+9896,0.32944596,132,124,all_wells,All wells
+9913,0.32448006,138,130,all_wells,All wells
+9963,0.25342077,139,131,all_wells,All wells
+9966,0.2610928,134,126,all_wells,All wells
+10041,0.31899664,138,130,all_wells,All wells
+10046,0.20230906,142,134,all_wells,All wells
+10047,0.16878636,135,127,all_wells,All wells
+10063,0.40496597,137,129,all_wells,All wells
+10094,0.1699052,139,131,all_wells,All wells
+10096,0.40444666,139,131,all_wells,All wells
+10132,0.33466342,134,126,all_wells,All wells
+10144,0.24930352,139,131,all_wells,All wells
+10153,0.26105213,134,126,all_wells,All wells
+10160,0.3217674,42,34,all_wells,All wells
+10267,0.17067252,129,121,all_wells,All wells
+10301,0.5473404,98,90,all_wells,All wells
+10335,0.34794167,139,131,all_wells,All wells
+10375,0.18966228,138,130,all_wells,All wells
+10472,0.3108091,140,132,all_wells,All wells
+10496,0.4593427,141,133,all_wells,All wells
+10510,0.4877285,138,130,all_wells,All wells
+10524,0.35317686,140,132,all_wells,All wells
+10527,0.4054522,138,130,all_wells,All wells
+10545,0.5274535,98,90,all_wells,All wells
+10559,0.23354714,141,133,all_wells,All wells
+10567,0.35022908,138,130,all_wells,All wells
+12113,0.23240149,137,129,all_wells,All wells
+12117,0.2515701,111,103,all_wells,All wells
+12132,0.4924724,108,100,all_wells,All wells
+12141,0.37895378,108,100,all_wells,All wells
+12148,0.3249655,94,86,all_wells,All wells
+12162,0.22427303,111,103,all_wells,All wells
+12164,0.48176622,78,70,all_wells,All wells
+12171,0.31886497,106,98,all_wells,All wells
+12178,0.28625926,142,134,all_wells,All wells
+12179,0.2420163,122,114,all_wells,All wells
+12192,0.3437561,84,76,all_wells,All wells
+12195,0.2920432,78,70,all_wells,All wells
+12198,0.34499446,70,62,all_wells,All wells
+12202,0.22176507,61,53,all_wells,All wells
+12208,0.3456893,110,102,all_wells,All wells
+12211,0.3080961,80,72,all_wells,All wells
+12215,0.27288568,136,128,all_wells,All wells
+12216,0.25405777,110,102,all_wells,All wells
+12225,0.26395,122,114,all_wells,All wells
+12232,0.5782675,76,68,all_wells,All wells
+12242,0.24235883,111,103,all_wells,All wells
+12244,0.37608808,136,128,all_wells,All wells
+12248,0.33369058,94,86,all_wells,All wells
+12250,0.56255317,60,52,all_wells,All wells
+12251,0.27253917,111,103,all_wells,All wells
+12256,0.23728012,110,102,all_wells,All wells
+12258,0.26406708,116,108,all_wells,All wells
+12270,0.16534093,117,109,all_wells,All wells
+12274,0.29137206,111,103,all_wells,All wells
+12275,0.24906068,142,134,all_wells,All wells
+12279,0.49919242,38,30,all_wells,All wells
+12281,0.42153734,139,131,all_wells,All wells
+12282,0.29849753,96,88,all_wells,All wells
+12283,0.26884884,127,119,all_wells,All wells
+12285,0.29004374,131,123,all_wells,All wells
+12294,0.27465668,139,131,all_wells,All wells
+12299,0.3264877,135,127,all_wells,All wells
+12303,0.30038667,76,68,all_wells,All wells
+12304,0.1848733,94,86,all_wells,All wells
+12311,0.25925446,111,103,all_wells,All wells
+12314,0.22876723,111,103,all_wells,All wells
+12319,0.22942667,111,103,all_wells,All wells
+12331,0.29098564,109,101,all_wells,All wells
+12337,0.2517904,111,103,all_wells,All wells
+12354,0.24651068,111,103,all_wells,All wells
+12363,0.26976147,111,103,all_wells,All wells
+12365,0.39702967,102,94,all_wells,All wells
+12371,0.35033968,126,118,all_wells,All wells
+12372,0.18934175,131,123,all_wells,All wells
+12376,0.26592162,110,102,all_wells,All wells
+12377,0.38006788,111,103,all_wells,All wells
+12396,0.3298457,140,132,all_wells,All wells
+12398,0.23258896,123,115,all_wells,All wells
+13392,0.5093209,43,35,all_wells,All wells
+16330,0.3713887,57,49,all_wells,All wells
+16331,0.2737667,140,132,all_wells,All wells
+16332,0.45145288,61,53,all_wells,All wells
+16333,0.2835781,139,131,all_wells,All wells
+16334,0.2706783,122,114,all_wells,All wells
+16335,0.30223668,139,131,all_wells,All wells
+16336,0.32944474,91,83,all_wells,All wells
+16337,0.31147236,126,118,all_wells,All wells
+16339,0.25989777,140,132,all_wells,All wells
+16340,0.23349331,140,132,all_wells,All wells
+16341,0.3091841,133,125,all_wells,All wells
+16343,0.35030958,104,96,all_wells,All wells
+16344,0.34301615,127,119,all_wells,All wells
+16345,0.2011003,140,132,all_wells,All wells
+16346,0.20530985,140,132,all_wells,All wells
+16347,0.3372527,139,131,all_wells,All wells
+16348,0.5452037,73,65,all_wells,All wells
+16349,0.31360233,140,132,all_wells,All wells
+16350,0.38651434,139,131,all_wells,All wells
+16352,0.3629086,122,114,all_wells,All wells
+16354,0.30566514,133,125,all_wells,All wells
+16357,0.30482665,104,96,all_wells,All wells
+16358,0.25620294,81,73,all_wells,All wells
+16359,0.25793812,102,94,all_wells,All wells
+16360,0.3835265,117,109,all_wells,All wells
+16362,0.42768914,114,106,all_wells,All wells
+16363,0.340722,128,120,all_wells,All wells
+16364,0.3153453,122,114,all_wells,All wells
+16365,0.26226717,82,74,all_wells,All wells
+16369,0.2767048,125,117,all_wells,All wells
+16370,0.3294374,139,131,all_wells,All wells
+16371,0.42529273,112,104,all_wells,All wells
+16372,0.29104313,131,123,all_wells,All wells
+16373,0.22332786,139,131,all_wells,All wells
+16374,0.33678865,113,105,all_wells,All wells
+16375,0.3047169,128,120,all_wells,All wells
+16377,0.28537557,140,132,all_wells,All wells
+16378,0.35764065,62,54,all_wells,All wells
+16381,0.29885784,128,120,all_wells,All wells
+16383,0.31113577,140,132,all_wells,All wells
+16384,0.6024454,18,10,all_wells,All wells
+16386,0.38029665,122,114,all_wells,All wells
+16390,0.3410891,139,131,all_wells,All wells
+16392,0.3937149,133,125,all_wells,All wells
+16394,0.34877017,61,53,all_wells,All wells
+16395,0.36416763,61,53,all_wells,All wells
+16400,0.45355895,96,88,all_wells,All wells
+16401,0.28380322,113,105,all_wells,All wells
+16402,0.27104238,133,125,all_wells,All wells
+16403,0.4634781,139,131,all_wells,All wells
+16405,0.22557592,133,125,all_wells,All wells
+16407,0.45925748,93,85,all_wells,All wells
+16408,0.2609786,103,95,all_wells,All wells
+16409,0.35567966,140,132,all_wells,All wells
+16410,0.20524442,140,132,all_wells,All wells
+16411,0.29338482,113,105,all_wells,All wells
+16412,0.2608491,84,76,all_wells,All wells
+16415,0.35622934,133,125,all_wells,All wells
+25141,0.42019877,133,125,all_wells,All wells
+25155,0.31357646,137,129,all_wells,All wells
+25157,0.46557423,135,127,all_wells,All wells
+25168,0.42968825,135,127,all_wells,All wells
+25169,0.39385828,135,127,all_wells,All wells
+25180,0.46708727,135,127,all_wells,All wells
+25186,0.5180552,132,124,all_wells,All wells
+25196,0.4020084,138,130,all_wells,All wells
+25200,0.46787742,136,128,all_wells,All wells
+25204,0.39059505,138,130,all_wells,All wells
+25205,0.26178166,106,98,all_wells,All wells
+25216,0.42351443,138,130,all_wells,All wells
+25219,0.47235486,136,128,all_wells,All wells
+25224,0.47955564,132,124,all_wells,All wells
+25230,0.41778025,138,130,all_wells,All wells
+25232,0.49703515,134,126,all_wells,All wells
+25237,0.5036146,138,130,all_wells,All wells
+25238,0.39323145,135,127,all_wells,All wells
+25239,0.36530516,128,120,all_wells,All wells
+25248,0.4545815,134,126,all_wells,All wells
+25252,0.3987152,138,130,all_wells,All wells
+25253,0.475375,138,130,all_wells,All wells
+25255,0.4217973,138,130,all_wells,All wells
+25268,0.35669714,141,133,all_wells,All wells
+25275,0.5001467,82,74,all_wells,All wells
+25279,0.23030636,141,133,all_wells,All wells
+25284,0.34320572,141,133,all_wells,All wells
+25287,0.4003857,140,132,all_wells,All wells
+25289,0.37056252,141,133,all_wells,All wells
+25290,0.35520598,141,133,all_wells,All wells
+25299,0.22778568,141,133,all_wells,All wells
+25300,0.40304092,140,132,all_wells,All wells
+25308,0.34536925,69,61,all_wells,All wells
+25310,0.4800056,141,133,all_wells,All wells
+25319,0.36029342,141,133,all_wells,All wells
+25325,0.2941375,138,130,all_wells,All wells
+25327,0.38171065,141,133,all_wells,All wells
+25330,0.38842973,141,133,all_wells,All wells
+26918,0.4330293,141,133,all_wells,All wells
+27268,0.43673503,141,133,all_wells,All wells
+27405,0.42967933,141,133,all_wells,All wells
+27945,0.30297005,120,112,all_wells,All wells
+27946,0.31095675,125,117,all_wells,All wells
+27954,0.4634381,121,113,all_wells,All wells
+27956,0.25674903,137,129,all_wells,All wells
+27958,0.18857065,118,110,all_wells,All wells
+27963,0.2254553,124,116,all_wells,All wells
+28001,0.20209521,109,101,all_wells,All wells
+28010,0.3878316,123,115,all_wells,All wells
+28019,0.32017738,122,114,all_wells,All wells
+28020,0.17888802,118,110,all_wells,All wells
+28030,0.31647685,123,115,all_wells,All wells
+28057,0.38655177,112,104,all_wells,All wells
+28072,0.28838366,119,111,all_wells,All wells
+28330,0.28813353,112,104,all_wells,All wells
+29245,0.37597647,123,115,all_wells,All wells
+29270,0.22291543,86,78,all_wells,All wells
+29309,0.21169025,124,116,all_wells,All wells
+29340,0.20898762,125,117,all_wells,All wells
+29360,0.37324858,125,117,all_wells,All wells
+29388,0.3780593,129,121,all_wells,All wells
+29443,0.23866244,97,89,all_wells,All wells
+30100,0.30134982,126,118,all_wells,All wells
+30292,0.3168614,116,108,all_wells,All wells
+30303,0.34105903,73,65,all_wells,All wells
+30498,0.4999237,98,90,all_wells,All wells
+30516,0.3018331,119,111,all_wells,All wells
+30597,0.2607707,129,121,all_wells,All wells
+30908,0.39391783,123,115,all_wells,All wells
+31039,0.48942545,129,121,all_wells,All wells
+31048,0.45556372,126,118,all_wells,All wells
+31301,0.26585147,123,115,all_wells,All wells
+31324,0.27917278,86,78,all_wells,All wells
+31380,0.35048798,126,118,all_wells,All wells
+31473,0.25842643,125,117,all_wells,All wells
+31675,0.1961489,127,119,all_wells,All wells
+31801,0.54256666,120,112,all_wells,All wells
+31810,0.38739043,127,119,all_wells,All wells
+31910,0.31773576,81,73,all_wells,All wells
+31945,0.32329738,125,117,all_wells,All wells
+31981,0.3236907,126,118,all_wells,All wells
+32022,0.3523263,76,68,all_wells,All wells
+32201,0.21951304,125,117,all_wells,All wells
+32342,0.2824299,130,122,all_wells,All wells
+32386,0.22863837,139,131,all_wells,All wells
+32393,0.268477,136,128,all_wells,All wells
+32399,0.16754696,140,132,all_wells,All wells
+32403,0.36015067,39,31,all_wells,All wells
+32407,0.29216778,38,30,all_wells,All wells
+32421,0.36583054,139,131,all_wells,All wells
+32424,0.22249171,136,128,all_wells,All wells
+32432,0.2510481,79,71,all_wells,All wells
+32445,0.35056195,141,133,all_wells,All wells
+32453,0.23398402,137,129,all_wells,All wells
+32489,0.2107698,134,126,all_wells,All wells
+32510,0.26026607,141,133,all_wells,All wells
+32519,0.22399563,138,130,all_wells,All wells
+32524,0.4288804,139,131,all_wells,All wells
+32527,0.27217674,130,122,all_wells,All wells
+32530,0.19497417,140,132,all_wells,All wells
+32553,0.21904598,142,134,all_wells,All wells
+32561,0.3318196,96,88,all_wells,All wells
+32571,0.44661042,138,130,all_wells,All wells
+32588,0.37648246,38,30,all_wells,All wells
+32597,0.37511083,127,119,all_wells,All wells
+32611,0.4106744,140,132,all_wells,All wells
+32652,0.40530667,140,132,all_wells,All wells
+32669,0.23899998,141,133,all_wells,All wells
+32679,0.2139283,111,103,all_wells,All wells
+32681,0.34765476,141,133,all_wells,All wells
+32688,0.3265876,138,130,all_wells,All wells
+32689,0.2874732,138,130,all_wells,All wells
+32693,0.19427143,140,132,all_wells,All wells
+32699,0.24921863,132,124,all_wells,All wells
+32704,0.33203608,40,32,all_wells,All wells
+32713,0.34024394,126,118,all_wells,All wells
+32718,0.29071495,140,132,all_wells,All wells
+32719,0.3262264,136,128,all_wells,All wells
+32723,0.4142492,141,133,all_wells,All wells
+32730,0.33731458,45,37,all_wells,All wells
+32751,0.4313788,136,128,all_wells,All wells
+32775,0.3405513,133,125,all_wells,All wells
+32803,0.32450494,132,124,all_wells,All wells
+32809,0.20314455,138,130,all_wells,All wells
+32876,0.4989349,39,31,all_wells,All wells
+32889,0.26449996,140,132,all_wells,All wells
+32951,0.50594634,106,98,all_wells,All wells
+32954,0.3138395,138,130,all_wells,All wells
+32967,0.41317302,113,105,all_wells,All wells
+32989,0.2882135,125,117,all_wells,All wells
+33012,0.22294624,139,131,all_wells,All wells
+33030,0.24568628,136,128,all_wells,All wells
+33041,0.33457944,140,132,all_wells,All wells
+33043,0.25906,138,130,all_wells,All wells
+33048,0.2657467,129,121,all_wells,All wells
+33050,0.50251734,106,98,all_wells,All wells
+33051,0.29373896,124,116,all_wells,All wells
+33072,0.25997767,38,30,all_wells,All wells
+33074,0.2567974,99,91,all_wells,All wells
+33089,0.21498017,137,129,all_wells,All wells
+33103,0.34687984,140,132,all_wells,All wells
+33128,0.4163743,140,132,all_wells,All wells
+33170,0.23470488,137,129,all_wells,All wells
+33199,0.37113303,142,134,all_wells,All wells
+33248,0.18910322,137,129,all_wells,All wells
+33249,0.28141686,40,32,all_wells,All wells
+33255,0.26219258,131,123,all_wells,All wells
+33273,0.4863673,139,131,all_wells,All wells
+33278,0.17565635,138,130,all_wells,All wells
+33280,0.30416238,39,31,all_wells,All wells
+33282,0.48805556,131,123,all_wells,All wells
+33312,0.2218908,139,131,all_wells,All wells
+33335,0.2962406,139,131,all_wells,All wells
+34531,0.3774779,140,132,all_wells,All wells
+34537,0.3920464,139,131,all_wells,All wells
+34548,0.30571625,73,65,all_wells,All wells
+34549,0.29102513,75,67,all_wells,All wells
+34550,0.5914849,73,65,all_wells,All wells
+34552,0.2624132,75,67,all_wells,All wells
+34555,0.24662799,76,68,all_wells,All wells
+34556,0.3293091,73,65,all_wells,All wells
+34557,0.55708283,44,36,all_wells,All wells
+34562,0.3073215,73,65,all_wells,All wells
+34563,0.22595946,75,67,all_wells,All wells
+34565,0.5719366,73,65,all_wells,All wells
+34566,0.34211236,73,65,all_wells,All wells
+34568,0.2384689,72,64,all_wells,All wells
+34569,0.27919865,76,68,all_wells,All wells
+34570,0.24943289,75,67,all_wells,All wells
+34571,0.46559748,73,65,all_wells,All wells
+34575,0.30096725,73,65,all_wells,All wells
+34577,0.2910345,75,67,all_wells,All wells
+34578,0.51303357,73,65,all_wells,All wells
+34579,0.27938017,75,67,all_wells,All wells
+34583,0.37384415,73,65,all_wells,All wells
+34586,0.4755674,76,68,all_wells,All wells
+34587,0.44644377,73,65,all_wells,All wells
+34588,0.337248,73,65,all_wells,All wells
+34590,0.33936223,73,65,all_wells,All wells
+34594,0.37632704,73,65,all_wells,All wells
+34597,0.5932247,76,68,all_wells,All wells
+37680,0.49037263,141,133,all_wells,All wells
+37692,0.23445965,140,132,all_wells,All wells
+37734,0.3787821,141,133,all_wells,All wells
+37757,0.50579333,138,130,all_wells,All wells
+37775,0.439216,141,133,all_wells,All wells
+37801,0.25126195,140,132,all_wells,All wells
+37827,0.18417262,141,133,all_wells,All wells
+37841,0.33998638,141,133,all_wells,All wells
+37867,0.20876807,141,133,all_wells,All wells
+37906,0.23893873,141,133,all_wells,All wells
+37912,0.2137594,141,133,all_wells,All wells
+37920,0.5023114,140,132,all_wells,All wells
+37923,0.2918087,137,129,all_wells,All wells
+37937,0.48321173,139,131,all_wells,All wells
+37960,0.2803814,141,133,all_wells,All wells
+37962,0.15746368,141,133,all_wells,All wells
+37964,0.21184495,141,133,all_wells,All wells
+37991,0.28562942,141,133,all_wells,All wells
+37997,0.19297063,141,133,all_wells,All wells
+38009,0.28165442,141,133,all_wells,All wells
+38020,0.24353537,140,132,all_wells,All wells
+38037,0.20173806,141,133,all_wells,All wells
+38046,0.32303122,137,129,all_wells,All wells
+38062,0.32604885,141,133,all_wells,All wells
+38068,0.38438818,141,133,all_wells,All wells
+42660,0.390311,131,123,all_wells,All wells
+43567,0.20198983,139,131,all_wells,All wells
+43568,0.25884423,140,132,all_wells,All wells
+43569,0.3140588,139,131,all_wells,All wells
+43643,0.33747968,131,123,all_wells,All wells
+43655,0.37611556,138,130,all_wells,All wells
+43665,0.24312799,136,128,all_wells,All wells
+43668,0.21166012,139,131,all_wells,All wells
+43670,0.44095296,93,85,all_wells,All wells
+43676,0.18246551,97,89,all_wells,All wells
+43679,0.38541752,133,125,all_wells,All wells
+43789,0.36315012,118,110,all_wells,All wells
+43790,0.22643742,116,108,all_wells,All wells
+43795,0.18890962,102,94,all_wells,All wells
+43895,0.21671914,129,121,all_wells,All wells
+43927,0.24106283,138,130,all_wells,All wells
+43987,0.25407326,127,119,all_wells,All wells
+44011,0.216124,125,117,all_wells,All wells
+44018,0.29694957,135,127,all_wells,All wells
+44032,0.22532931,138,130,all_wells,All wells
+44060,0.28450057,134,126,all_wells,All wells
+44072,0.31416422,103,95,all_wells,All wells
+44097,0.28943396,99,91,all_wells,All wells
+44112,0.31867003,132,124,all_wells,All wells
+44146,0.27259827,132,124,all_wells,All wells
+44149,0.30257556,106,98,all_wells,All wells
+44206,0.24830751,130,122,all_wells,All wells
+44253,0.3049412,132,124,all_wells,All wells
+45749,0.4988636,76,68,all_wells,All wells
+45751,0.3287965,76,68,all_wells,All wells
+45753,0.5529411,74,66,all_wells,All wells
+51239,0.20031135,88,80,all_wells,All wells
+53459,0.3218619,119,111,all_wells,All wells
+53466,0.24747165,139,131,all_wells,All wells
+53515,0.23297462,98,90,all_wells,All wells
+53523,0.28795466,131,123,all_wells,All wells
+53802,0.37748873,132,124,all_wells,All wells
+59106,0.21107996,137,129,all_wells,All wells
+59114,0.40539858,86,78,all_wells,All wells
+64365,0.31156734,137,129,all_wells,All wells
+64379,0.15278533,142,134,all_wells,All wells
+64391,0.353774,142,134,all_wells,All wells
+64439,0.243943,132,124,all_wells,All wells
+64473,0.31071746,137,129,all_wells,All wells
+64507,0.3132504,137,129,all_wells,All wells
+64543,0.4565355,138,130,all_wells,All wells
+64599,0.5117547,99,91,all_wells,All wells
+65959,0.26921096,142,134,all_wells,All wells
+65965,0.5323166,136,128,all_wells,All wells
+66039,0.5490928,135,127,all_wells,All wells
+66048,0.24249774,129,121,all_wells,All wells
+66050,0.26864251,130,122,all_wells,All wells
+66076,0.3020251,138,130,all_wells,All wells
+66083,0.35507497,141,133,all_wells,All wells
+66092,0.4257012,132,124,all_wells,All wells
+66098,0.34119222,135,127,all_wells,All wells
+66105,0.35874352,139,131,all_wells,All wells
+66118,0.40010756,141,133,all_wells,All wells
+66121,0.33872968,137,129,all_wells,All wells
+66126,0.33727232,137,129,all_wells,All wells
+66132,0.26068172,142,134,all_wells,All wells
+66134,0.38336205,142,134,all_wells,All wells
+66155,0.39005423,142,134,all_wells,All wells
+66156,0.39197043,142,134,all_wells,All wells
+66199,0.33339292,138,130,all_wells,All wells
+66216,0.3639096,140,132,all_wells,All wells
+66222,0.46093792,134,126,all_wells,All wells
+66224,0.30369318,134,126,all_wells,All wells
+66250,0.36601463,139,131,all_wells,All wells
+66256,0.3675067,142,134,all_wells,All wells
+66265,0.55249804,138,130,all_wells,All wells
+66266,0.3571379,142,134,all_wells,All wells
+66268,0.2745712,142,134,all_wells,All wells
+66272,0.29108346,136,128,all_wells,All wells
+66318,0.45921215,136,128,all_wells,All wells
+66323,0.33787298,122,114,all_wells,All wells
+66337,0.22602542,139,131,all_wells,All wells
+66352,0.5395105,124,116,all_wells,All wells
+66369,0.40835026,142,134,all_wells,All wells
+66380,0.31946012,142,134,all_wells,All wells
+66381,0.42605606,142,134,all_wells,All wells
+66385,0.41127172,141,133,all_wells,All wells
+66393,0.39158252,140,132,all_wells,All wells
+66406,0.35173044,136,128,all_wells,All wells
+66446,0.32864648,141,133,all_wells,All wells
+66458,0.5433467,136,128,all_wells,All wells
+66461,0.39382815,139,131,all_wells,All wells
+66500,0.3630953,136,128,all_wells,All wells
+66507,0.2741662,142,134,all_wells,All wells
+66517,0.35517094,142,134,all_wells,All wells
+66520,0.5225442,138,130,all_wells,All wells
+66528,0.37493932,142,134,all_wells,All wells
+66541,0.37535316,142,134,all_wells,All wells
+66556,0.3597251,141,133,all_wells,All wells
+66567,0.4425259,142,134,all_wells,All wells
+66571,0.54696757,135,127,all_wells,All wells
+66602,0.24272895,141,133,all_wells,All wells
+66603,0.5120219,132,124,all_wells,All wells
+66607,0.40948272,88,80,all_wells,All wells
+66608,0.24642208,139,131,all_wells,All wells
+66611,0.3368892,88,80,all_wells,All wells
+66616,0.33036754,128,120,all_wells,All wells
+66620,0.35162532,142,134,all_wells,All wells
+85354,0.34684262,140,132,all_wells,All wells
+87182,0.22085007,111,103,all_wells,All wells
+87184,0.23790875,112,104,all_wells,All wells
+88074,0.2755797,66,58,all_wells,All wells
+88075,0.25816125,67,59,all_wells,All wells
+103037,0.2461223,141,133,all_wells,All wells
+103048,0.29652634,142,134,all_wells,All wells
+103050,0.45016733,132,124,all_wells,All wells
+103071,0.2451639,142,134,all_wells,All wells
+103076,0.31135538,141,133,all_wells,All wells
+103082,0.38720638,142,134,all_wells,All wells
+103083,0.357109,128,120,all_wells,All wells
+103086,0.38412628,136,128,all_wells,All wells
+103096,0.3809313,52,44,all_wells,All wells
+103290,0.32122058,137,129,all_wells,All wells
+103419,0.33081686,137,129,all_wells,All wells
+104315,0.31835952,133,125,all_wells,All wells
+104316,0.24690697,131,123,all_wells,All wells
+109298,0.49513113,141,133,all_wells,All wells
+118237,0.33462635,123,115,all_wells,All wells
+118260,0.23785457,139,131,all_wells,All wells
+118345,0.19816329,139,131,all_wells,All wells
+118526,0.29467,138,130,all_wells,All wells
+118579,0.35866755,82,74,all_wells,All wells
+118588,0.41428936,135,127,all_wells,All wells
+118619,0.20146942,136,128,all_wells,All wells
+118623,0.3873306,135,127,all_wells,All wells
+118625,0.39143148,134,126,all_wells,All wells
+118626,0.40039116,135,127,all_wells,All wells
+118631,0.334551,129,121,all_wells,All wells
+118670,0.37589085,137,129,all_wells,All wells
+118719,0.29333264,118,110,all_wells,All wells
+118752,0.40216178,135,127,all_wells,All wells
+118753,0.36477387,134,126,all_wells,All wells
+118794,0.4229207,135,127,all_wells,All wells
+118851,0.31508362,136,128,all_wells,All wells
+118866,0.40168643,135,127,all_wells,All wells
+118867,0.33456782,134,126,all_wells,All wells
+120044,0.32346433,130,122,all_wells,All wells
+9802,0.45781997,141,133,high_similarity_q75,High similarity
+9853,0.54366064,137,129,high_similarity_q75,High similarity
+10063,0.40496597,137,129,high_similarity_q75,High similarity
+10096,0.40444666,139,131,high_similarity_q75,High similarity
+10301,0.5473404,98,90,high_similarity_q75,High similarity
+10496,0.4593427,141,133,high_similarity_q75,High similarity
+10510,0.4877285,138,130,high_similarity_q75,High similarity
+10527,0.4054522,138,130,high_similarity_q75,High similarity
+10545,0.5274535,98,90,high_similarity_q75,High similarity
+12132,0.4924724,108,100,high_similarity_q75,High similarity
+12164,0.48176622,78,70,high_similarity_q75,High similarity
+12232,0.5782675,76,68,high_similarity_q75,High similarity
+12250,0.56255317,60,52,high_similarity_q75,High similarity
+12279,0.49919242,38,30,high_similarity_q75,High similarity
+12281,0.42153734,139,131,high_similarity_q75,High similarity
+12365,0.39702967,102,94,high_similarity_q75,High similarity
+13392,0.5093209,43,35,high_similarity_q75,High similarity
+16332,0.45145288,61,53,high_similarity_q75,High similarity
+16348,0.5452037,73,65,high_similarity_q75,High similarity
+16362,0.42768914,114,106,high_similarity_q75,High similarity
+16371,0.42529273,112,104,high_similarity_q75,High similarity
+16384,0.6024454,18,10,high_similarity_q75,High similarity
+16392,0.3937149,133,125,high_similarity_q75,High similarity
+16400,0.45355895,96,88,high_similarity_q75,High similarity
+16403,0.4634781,139,131,high_similarity_q75,High similarity
+16407,0.45925748,93,85,high_similarity_q75,High similarity
+25141,0.42019877,133,125,high_similarity_q75,High similarity
+25157,0.46557423,135,127,high_similarity_q75,High similarity
+25168,0.42968825,135,127,high_similarity_q75,High similarity
+25169,0.39385828,135,127,high_similarity_q75,High similarity
+25180,0.46708727,135,127,high_similarity_q75,High similarity
+25186,0.5180552,132,124,high_similarity_q75,High similarity
+25196,0.4020084,138,130,high_similarity_q75,High similarity
+25200,0.46787742,136,128,high_similarity_q75,High similarity
+25204,0.39059505,138,130,high_similarity_q75,High similarity
+25216,0.42351443,138,130,high_similarity_q75,High similarity
+25219,0.47235486,136,128,high_similarity_q75,High similarity
+25224,0.47955564,132,124,high_similarity_q75,High similarity
+25230,0.41778025,138,130,high_similarity_q75,High similarity
+25232,0.49703515,134,126,high_similarity_q75,High similarity
+25237,0.5036146,138,130,high_similarity_q75,High similarity
+25238,0.39323145,135,127,high_similarity_q75,High similarity
+25248,0.4545815,134,126,high_similarity_q75,High similarity
+25252,0.3987152,138,130,high_similarity_q75,High similarity
+25253,0.475375,138,130,high_similarity_q75,High similarity
+25255,0.4217973,138,130,high_similarity_q75,High similarity
+25275,0.5001467,82,74,high_similarity_q75,High similarity
+25287,0.4003857,140,132,high_similarity_q75,High similarity
+25300,0.40304092,140,132,high_similarity_q75,High similarity
+25310,0.4800056,141,133,high_similarity_q75,High similarity
+25330,0.38842973,141,133,high_similarity_q75,High similarity
+26918,0.4330293,141,133,high_similarity_q75,High similarity
+27268,0.43673503,141,133,high_similarity_q75,High similarity
+27405,0.42967933,141,133,high_similarity_q75,High similarity
+27954,0.4634381,121,113,high_similarity_q75,High similarity
+28010,0.3878316,123,115,high_similarity_q75,High similarity
+30498,0.4999237,98,90,high_similarity_q75,High similarity
+30908,0.39391783,123,115,high_similarity_q75,High similarity
+31039,0.48942545,129,121,high_similarity_q75,High similarity
+31048,0.45556372,126,118,high_similarity_q75,High similarity
+31801,0.54256666,120,112,high_similarity_q75,High similarity
+32524,0.4288804,139,131,high_similarity_q75,High similarity
+32571,0.44661042,138,130,high_similarity_q75,High similarity
+32611,0.4106744,140,132,high_similarity_q75,High similarity
+32652,0.40530667,140,132,high_similarity_q75,High similarity
+32723,0.4142492,141,133,high_similarity_q75,High similarity
+32751,0.4313788,136,128,high_similarity_q75,High similarity
+32876,0.4989349,39,31,high_similarity_q75,High similarity
+32951,0.50594634,106,98,high_similarity_q75,High similarity
+32967,0.41317302,113,105,high_similarity_q75,High similarity
+33050,0.50251734,106,98,high_similarity_q75,High similarity
+33128,0.4163743,140,132,high_similarity_q75,High similarity
+33273,0.4863673,139,131,high_similarity_q75,High similarity
+33282,0.48805556,131,123,high_similarity_q75,High similarity
+34537,0.3920464,139,131,high_similarity_q75,High similarity
+34550,0.5914849,73,65,high_similarity_q75,High similarity
+34557,0.55708283,44,36,high_similarity_q75,High similarity
+34565,0.5719366,73,65,high_similarity_q75,High similarity
+34571,0.46559748,73,65,high_similarity_q75,High similarity
+34578,0.51303357,73,65,high_similarity_q75,High similarity
+34586,0.4755674,76,68,high_similarity_q75,High similarity
+34587,0.44644377,73,65,high_similarity_q75,High similarity
+34597,0.5932247,76,68,high_similarity_q75,High similarity
+37680,0.49037263,141,133,high_similarity_q75,High similarity
+37757,0.50579333,138,130,high_similarity_q75,High similarity
+37775,0.439216,141,133,high_similarity_q75,High similarity
+37920,0.5023114,140,132,high_similarity_q75,High similarity
+37937,0.48321173,139,131,high_similarity_q75,High similarity
+42660,0.390311,131,123,high_similarity_q75,High similarity
+43670,0.44095296,93,85,high_similarity_q75,High similarity
+45749,0.4988636,76,68,high_similarity_q75,High similarity
+45753,0.5529411,74,66,high_similarity_q75,High similarity
+59114,0.40539858,86,78,high_similarity_q75,High similarity
+64543,0.4565355,138,130,high_similarity_q75,High similarity
+64599,0.5117547,99,91,high_similarity_q75,High similarity
+65965,0.5323166,136,128,high_similarity_q75,High similarity
+66039,0.5490928,135,127,high_similarity_q75,High similarity
+66092,0.4257012,132,124,high_similarity_q75,High similarity
+66118,0.40010756,141,133,high_similarity_q75,High similarity
+66155,0.39005423,142,134,high_similarity_q75,High similarity
+66156,0.39197043,142,134,high_similarity_q75,High similarity
+66222,0.46093792,134,126,high_similarity_q75,High similarity
+66265,0.55249804,138,130,high_similarity_q75,High similarity
+66318,0.45921215,136,128,high_similarity_q75,High similarity
+66352,0.5395105,124,116,high_similarity_q75,High similarity
+66369,0.40835026,142,134,high_similarity_q75,High similarity
+66381,0.42605606,142,134,high_similarity_q75,High similarity
+66385,0.41127172,141,133,high_similarity_q75,High similarity
+66393,0.39158252,140,132,high_similarity_q75,High similarity
+66458,0.5433467,136,128,high_similarity_q75,High similarity
+66461,0.39382815,139,131,high_similarity_q75,High similarity
+66520,0.5225442,138,130,high_similarity_q75,High similarity
+66567,0.4425259,142,134,high_similarity_q75,High similarity
+66571,0.54696757,135,127,high_similarity_q75,High similarity
+66603,0.5120219,132,124,high_similarity_q75,High similarity
+66607,0.40948272,88,80,high_similarity_q75,High similarity
+103050,0.45016733,132,124,high_similarity_q75,High similarity
+109298,0.49513113,141,133,high_similarity_q75,High similarity
+118588,0.41428936,135,127,high_similarity_q75,High similarity
+118625,0.39143148,134,126,high_similarity_q75,High similarity
+118626,0.40039116,135,127,high_similarity_q75,High similarity
+118752,0.40216178,135,127,high_similarity_q75,High similarity
+118794,0.4229207,135,127,high_similarity_q75,High similarity
+118866,0.40168643,135,127,high_similarity_q75,High similarity
+9802,0.45781997,141,133,high_overlap_q75,High overlap
+9822,0.29423472,141,133,high_overlap_q75,High overlap
+9844,0.25681362,140,132,high_overlap_q75,High overlap
+9963,0.25342077,139,131,high_overlap_q75,High overlap
+10046,0.20230906,142,134,high_overlap_q75,High overlap
+10094,0.1699052,139,131,high_overlap_q75,High overlap
+10096,0.40444666,139,131,high_overlap_q75,High overlap
+10144,0.24930352,139,131,high_overlap_q75,High overlap
+10335,0.34794167,139,131,high_overlap_q75,High overlap
+10472,0.3108091,140,132,high_overlap_q75,High overlap
+10496,0.4593427,141,133,high_overlap_q75,High overlap
+10524,0.35317686,140,132,high_overlap_q75,High overlap
+10559,0.23354714,141,133,high_overlap_q75,High overlap
+12178,0.28625926,142,134,high_overlap_q75,High overlap
+12275,0.24906068,142,134,high_overlap_q75,High overlap
+12281,0.42153734,139,131,high_overlap_q75,High overlap
+12294,0.27465668,139,131,high_overlap_q75,High overlap
+12396,0.3298457,140,132,high_overlap_q75,High overlap
+16331,0.2737667,140,132,high_overlap_q75,High overlap
+16333,0.2835781,139,131,high_overlap_q75,High overlap
+16335,0.30223668,139,131,high_overlap_q75,High overlap
+16339,0.25989777,140,132,high_overlap_q75,High overlap
+16340,0.23349331,140,132,high_overlap_q75,High overlap
+16345,0.2011003,140,132,high_overlap_q75,High overlap
+16346,0.20530985,140,132,high_overlap_q75,High overlap
+16347,0.3372527,139,131,high_overlap_q75,High overlap
+16349,0.31360233,140,132,high_overlap_q75,High overlap
+16350,0.38651434,139,131,high_overlap_q75,High overlap
+16370,0.3294374,139,131,high_overlap_q75,High overlap
+16373,0.22332786,139,131,high_overlap_q75,High overlap
+16377,0.28537557,140,132,high_overlap_q75,High overlap
+16383,0.31113577,140,132,high_overlap_q75,High overlap
+16390,0.3410891,139,131,high_overlap_q75,High overlap
+16403,0.4634781,139,131,high_overlap_q75,High overlap
+16409,0.35567966,140,132,high_overlap_q75,High overlap
+16410,0.20524442,140,132,high_overlap_q75,High overlap
+25268,0.35669714,141,133,high_overlap_q75,High overlap
+25279,0.23030636,141,133,high_overlap_q75,High overlap
+25284,0.34320572,141,133,high_overlap_q75,High overlap
+25287,0.4003857,140,132,high_overlap_q75,High overlap
+25289,0.37056252,141,133,high_overlap_q75,High overlap
+25290,0.35520598,141,133,high_overlap_q75,High overlap
+25299,0.22778568,141,133,high_overlap_q75,High overlap
+25300,0.40304092,140,132,high_overlap_q75,High overlap
+25310,0.4800056,141,133,high_overlap_q75,High overlap
+25319,0.36029342,141,133,high_overlap_q75,High overlap
+25327,0.38171065,141,133,high_overlap_q75,High overlap
+25330,0.38842973,141,133,high_overlap_q75,High overlap
+26918,0.4330293,141,133,high_overlap_q75,High overlap
+27268,0.43673503,141,133,high_overlap_q75,High overlap
+27405,0.42967933,141,133,high_overlap_q75,High overlap
+32386,0.22863837,139,131,high_overlap_q75,High overlap
+32399,0.16754696,140,132,high_overlap_q75,High overlap
+32421,0.36583054,139,131,high_overlap_q75,High overlap
+32445,0.35056195,141,133,high_overlap_q75,High overlap
+32510,0.26026607,141,133,high_overlap_q75,High overlap
+32524,0.4288804,139,131,high_overlap_q75,High overlap
+32530,0.19497417,140,132,high_overlap_q75,High overlap
+32553,0.21904598,142,134,high_overlap_q75,High overlap
+32611,0.4106744,140,132,high_overlap_q75,High overlap
+32652,0.40530667,140,132,high_overlap_q75,High overlap
+32669,0.23899998,141,133,high_overlap_q75,High overlap
+32681,0.34765476,141,133,high_overlap_q75,High overlap
+32693,0.19427143,140,132,high_overlap_q75,High overlap
+32718,0.29071495,140,132,high_overlap_q75,High overlap
+32723,0.4142492,141,133,high_overlap_q75,High overlap
+32889,0.26449996,140,132,high_overlap_q75,High overlap
+33012,0.22294624,139,131,high_overlap_q75,High overlap
+33041,0.33457944,140,132,high_overlap_q75,High overlap
+33103,0.34687984,140,132,high_overlap_q75,High overlap
+33128,0.4163743,140,132,high_overlap_q75,High overlap
+33199,0.37113303,142,134,high_overlap_q75,High overlap
+33273,0.4863673,139,131,high_overlap_q75,High overlap
+33312,0.2218908,139,131,high_overlap_q75,High overlap
+33335,0.2962406,139,131,high_overlap_q75,High overlap
+34531,0.3774779,140,132,high_overlap_q75,High overlap
+34537,0.3920464,139,131,high_overlap_q75,High overlap
+37680,0.49037263,141,133,high_overlap_q75,High overlap
+37692,0.23445965,140,132,high_overlap_q75,High overlap
+37734,0.3787821,141,133,high_overlap_q75,High overlap
+37775,0.439216,141,133,high_overlap_q75,High overlap
+37801,0.25126195,140,132,high_overlap_q75,High overlap
+37827,0.18417262,141,133,high_overlap_q75,High overlap
+37841,0.33998638,141,133,high_overlap_q75,High overlap
+37867,0.20876807,141,133,high_overlap_q75,High overlap
+37906,0.23893873,141,133,high_overlap_q75,High overlap
+37912,0.2137594,141,133,high_overlap_q75,High overlap
+37920,0.5023114,140,132,high_overlap_q75,High overlap
+37937,0.48321173,139,131,high_overlap_q75,High overlap
+37960,0.2803814,141,133,high_overlap_q75,High overlap
+37962,0.15746368,141,133,high_overlap_q75,High overlap
+37964,0.21184495,141,133,high_overlap_q75,High overlap
+37991,0.28562942,141,133,high_overlap_q75,High overlap
+37997,0.19297063,141,133,high_overlap_q75,High overlap
+38009,0.28165442,141,133,high_overlap_q75,High overlap
+38020,0.24353537,140,132,high_overlap_q75,High overlap
+38037,0.20173806,141,133,high_overlap_q75,High overlap
+38062,0.32604885,141,133,high_overlap_q75,High overlap
+38068,0.38438818,141,133,high_overlap_q75,High overlap
+43567,0.20198983,139,131,high_overlap_q75,High overlap
+43568,0.25884423,140,132,high_overlap_q75,High overlap
+43569,0.3140588,139,131,high_overlap_q75,High overlap
+43668,0.21166012,139,131,high_overlap_q75,High overlap
+53466,0.24747165,139,131,high_overlap_q75,High overlap
+64379,0.15278533,142,134,high_overlap_q75,High overlap
+64391,0.353774,142,134,high_overlap_q75,High overlap
+65959,0.26921096,142,134,high_overlap_q75,High overlap
+66083,0.35507497,141,133,high_overlap_q75,High overlap
+66105,0.35874352,139,131,high_overlap_q75,High overlap
+66118,0.40010756,141,133,high_overlap_q75,High overlap
+66132,0.26068172,142,134,high_overlap_q75,High overlap
+66134,0.38336205,142,134,high_overlap_q75,High overlap
+66155,0.39005423,142,134,high_overlap_q75,High overlap
+66156,0.39197043,142,134,high_overlap_q75,High overlap
+66216,0.3639096,140,132,high_overlap_q75,High overlap
+66250,0.36601463,139,131,high_overlap_q75,High overlap
+66256,0.3675067,142,134,high_overlap_q75,High overlap
+66266,0.3571379,142,134,high_overlap_q75,High overlap
+66268,0.2745712,142,134,high_overlap_q75,High overlap
+66337,0.22602542,139,131,high_overlap_q75,High overlap
+66369,0.40835026,142,134,high_overlap_q75,High overlap
+66380,0.31946012,142,134,high_overlap_q75,High overlap
+66381,0.42605606,142,134,high_overlap_q75,High overlap
+66385,0.41127172,141,133,high_overlap_q75,High overlap
+66393,0.39158252,140,132,high_overlap_q75,High overlap
+66446,0.32864648,141,133,high_overlap_q75,High overlap
+66461,0.39382815,139,131,high_overlap_q75,High overlap
+66507,0.2741662,142,134,high_overlap_q75,High overlap
+66517,0.35517094,142,134,high_overlap_q75,High overlap
+66528,0.37493932,142,134,high_overlap_q75,High overlap
+66541,0.37535316,142,134,high_overlap_q75,High overlap
+66556,0.3597251,141,133,high_overlap_q75,High overlap
+66567,0.4425259,142,134,high_overlap_q75,High overlap
+66602,0.24272895,141,133,high_overlap_q75,High overlap
+66608,0.24642208,139,131,high_overlap_q75,High overlap
+66620,0.35162532,142,134,high_overlap_q75,High overlap
+85354,0.34684262,140,132,high_overlap_q75,High overlap
+103037,0.2461223,141,133,high_overlap_q75,High overlap
+103048,0.29652634,142,134,high_overlap_q75,High overlap
+103071,0.2451639,142,134,high_overlap_q75,High overlap
+103076,0.31135538,141,133,high_overlap_q75,High overlap
+103082,0.38720638,142,134,high_overlap_q75,High overlap
+109298,0.49513113,141,133,high_overlap_q75,High overlap
+118260,0.23785457,139,131,high_overlap_q75,High overlap
+118345,0.19816329,139,131,high_overlap_q75,High overlap
+9802,0.45781997,141,133,history_rich_q75,History-rich
+9822,0.29423472,141,133,history_rich_q75,History-rich
+9844,0.25681362,140,132,history_rich_q75,History-rich
+9963,0.25342077,139,131,history_rich_q75,History-rich
+10046,0.20230906,142,134,history_rich_q75,History-rich
+10094,0.1699052,139,131,history_rich_q75,History-rich
+10096,0.40444666,139,131,history_rich_q75,History-rich
+10144,0.24930352,139,131,history_rich_q75,History-rich
+10335,0.34794167,139,131,history_rich_q75,History-rich
+10472,0.3108091,140,132,history_rich_q75,History-rich
+10496,0.4593427,141,133,history_rich_q75,History-rich
+10524,0.35317686,140,132,history_rich_q75,History-rich
+10559,0.23354714,141,133,history_rich_q75,History-rich
+12178,0.28625926,142,134,history_rich_q75,History-rich
+12275,0.24906068,142,134,history_rich_q75,History-rich
+12281,0.42153734,139,131,history_rich_q75,History-rich
+12294,0.27465668,139,131,history_rich_q75,History-rich
+12396,0.3298457,140,132,history_rich_q75,History-rich
+16331,0.2737667,140,132,history_rich_q75,History-rich
+16333,0.2835781,139,131,history_rich_q75,History-rich
+16335,0.30223668,139,131,history_rich_q75,History-rich
+16339,0.25989777,140,132,history_rich_q75,History-rich
+16340,0.23349331,140,132,history_rich_q75,History-rich
+16345,0.2011003,140,132,history_rich_q75,History-rich
+16346,0.20530985,140,132,history_rich_q75,History-rich
+16347,0.3372527,139,131,history_rich_q75,History-rich
+16349,0.31360233,140,132,history_rich_q75,History-rich
+16350,0.38651434,139,131,history_rich_q75,History-rich
+16370,0.3294374,139,131,history_rich_q75,History-rich
+16373,0.22332786,139,131,history_rich_q75,History-rich
+16377,0.28537557,140,132,history_rich_q75,History-rich
+16383,0.31113577,140,132,history_rich_q75,History-rich
+16390,0.3410891,139,131,history_rich_q75,History-rich
+16403,0.4634781,139,131,history_rich_q75,History-rich
+16409,0.35567966,140,132,history_rich_q75,History-rich
+16410,0.20524442,140,132,history_rich_q75,History-rich
+25268,0.35669714,141,133,history_rich_q75,History-rich
+25279,0.23030636,141,133,history_rich_q75,History-rich
+25284,0.34320572,141,133,history_rich_q75,History-rich
+25287,0.4003857,140,132,history_rich_q75,History-rich
+25289,0.37056252,141,133,history_rich_q75,History-rich
+25290,0.35520598,141,133,history_rich_q75,History-rich
+25299,0.22778568,141,133,history_rich_q75,History-rich
+25300,0.40304092,140,132,history_rich_q75,History-rich
+25310,0.4800056,141,133,history_rich_q75,History-rich
+25319,0.36029342,141,133,history_rich_q75,History-rich
+25327,0.38171065,141,133,history_rich_q75,History-rich
+25330,0.38842973,141,133,history_rich_q75,History-rich
+26918,0.4330293,141,133,history_rich_q75,History-rich
+27268,0.43673503,141,133,history_rich_q75,History-rich
+27405,0.42967933,141,133,history_rich_q75,History-rich
+32386,0.22863837,139,131,history_rich_q75,History-rich
+32399,0.16754696,140,132,history_rich_q75,History-rich
+32421,0.36583054,139,131,history_rich_q75,History-rich
+32445,0.35056195,141,133,history_rich_q75,History-rich
+32510,0.26026607,141,133,history_rich_q75,History-rich
+32524,0.4288804,139,131,history_rich_q75,History-rich
+32530,0.19497417,140,132,history_rich_q75,History-rich
+32553,0.21904598,142,134,history_rich_q75,History-rich
+32611,0.4106744,140,132,history_rich_q75,History-rich
+32652,0.40530667,140,132,history_rich_q75,History-rich
+32669,0.23899998,141,133,history_rich_q75,History-rich
+32681,0.34765476,141,133,history_rich_q75,History-rich
+32693,0.19427143,140,132,history_rich_q75,History-rich
+32718,0.29071495,140,132,history_rich_q75,History-rich
+32723,0.4142492,141,133,history_rich_q75,History-rich
+32889,0.26449996,140,132,history_rich_q75,History-rich
+33012,0.22294624,139,131,history_rich_q75,History-rich
+33041,0.33457944,140,132,history_rich_q75,History-rich
+33103,0.34687984,140,132,history_rich_q75,History-rich
+33128,0.4163743,140,132,history_rich_q75,History-rich
+33199,0.37113303,142,134,history_rich_q75,History-rich
+33273,0.4863673,139,131,history_rich_q75,History-rich
+33312,0.2218908,139,131,history_rich_q75,History-rich
+33335,0.2962406,139,131,history_rich_q75,History-rich
+34531,0.3774779,140,132,history_rich_q75,History-rich
+34537,0.3920464,139,131,history_rich_q75,History-rich
+37680,0.49037263,141,133,history_rich_q75,History-rich
+37692,0.23445965,140,132,history_rich_q75,History-rich
+37734,0.3787821,141,133,history_rich_q75,History-rich
+37775,0.439216,141,133,history_rich_q75,History-rich
+37801,0.25126195,140,132,history_rich_q75,History-rich
+37827,0.18417262,141,133,history_rich_q75,History-rich
+37841,0.33998638,141,133,history_rich_q75,History-rich
+37867,0.20876807,141,133,history_rich_q75,History-rich
+37906,0.23893873,141,133,history_rich_q75,History-rich
+37912,0.2137594,141,133,history_rich_q75,History-rich
+37920,0.5023114,140,132,history_rich_q75,History-rich
+37937,0.48321173,139,131,history_rich_q75,History-rich
+37960,0.2803814,141,133,history_rich_q75,History-rich
+37962,0.15746368,141,133,history_rich_q75,History-rich
+37964,0.21184495,141,133,history_rich_q75,History-rich
+37991,0.28562942,141,133,history_rich_q75,History-rich
+37997,0.19297063,141,133,history_rich_q75,History-rich
+38009,0.28165442,141,133,history_rich_q75,History-rich
+38020,0.24353537,140,132,history_rich_q75,History-rich
+38037,0.20173806,141,133,history_rich_q75,History-rich
+38062,0.32604885,141,133,history_rich_q75,History-rich
+38068,0.38438818,141,133,history_rich_q75,History-rich
+43567,0.20198983,139,131,history_rich_q75,History-rich
+43568,0.25884423,140,132,history_rich_q75,History-rich
+43569,0.3140588,139,131,history_rich_q75,History-rich
+43668,0.21166012,139,131,history_rich_q75,History-rich
+53466,0.24747165,139,131,history_rich_q75,History-rich
+64379,0.15278533,142,134,history_rich_q75,History-rich
+64391,0.353774,142,134,history_rich_q75,History-rich
+65959,0.26921096,142,134,history_rich_q75,History-rich
+66083,0.35507497,141,133,history_rich_q75,History-rich
+66105,0.35874352,139,131,history_rich_q75,History-rich
+66118,0.40010756,141,133,history_rich_q75,History-rich
+66132,0.26068172,142,134,history_rich_q75,History-rich
+66134,0.38336205,142,134,history_rich_q75,History-rich
+66155,0.39005423,142,134,history_rich_q75,History-rich
+66156,0.39197043,142,134,history_rich_q75,History-rich
+66216,0.3639096,140,132,history_rich_q75,History-rich
+66250,0.36601463,139,131,history_rich_q75,History-rich
+66256,0.3675067,142,134,history_rich_q75,History-rich
+66266,0.3571379,142,134,history_rich_q75,History-rich
+66268,0.2745712,142,134,history_rich_q75,History-rich
+66337,0.22602542,139,131,history_rich_q75,History-rich
+66369,0.40835026,142,134,history_rich_q75,History-rich
+66380,0.31946012,142,134,history_rich_q75,History-rich
+66381,0.42605606,142,134,history_rich_q75,History-rich
+66385,0.41127172,141,133,history_rich_q75,History-rich
+66393,0.39158252,140,132,history_rich_q75,History-rich
+66446,0.32864648,141,133,history_rich_q75,History-rich
+66461,0.39382815,139,131,history_rich_q75,History-rich
+66507,0.2741662,142,134,history_rich_q75,History-rich
+66517,0.35517094,142,134,history_rich_q75,History-rich
+66528,0.37493932,142,134,history_rich_q75,History-rich
+66541,0.37535316,142,134,history_rich_q75,History-rich
+66556,0.3597251,141,133,history_rich_q75,History-rich
+66567,0.4425259,142,134,history_rich_q75,History-rich
+66602,0.24272895,141,133,history_rich_q75,History-rich
+66608,0.24642208,139,131,history_rich_q75,History-rich
+66620,0.35162532,142,134,history_rich_q75,History-rich
+85354,0.34684262,140,132,history_rich_q75,History-rich
+103037,0.2461223,141,133,history_rich_q75,History-rich
+103048,0.29652634,142,134,history_rich_q75,History-rich
+103071,0.2451639,142,134,history_rich_q75,History-rich
+103076,0.31135538,141,133,history_rich_q75,History-rich
+103082,0.38720638,142,134,history_rich_q75,History-rich
+109298,0.49513113,141,133,history_rich_q75,History-rich
+118260,0.23785457,139,131,history_rich_q75,History-rich
+118345,0.19816329,139,131,history_rich_q75,History-rich
+9802,0.45781997,141,133,transfer_ready_q75,Transfer-ready
+10096,0.40444666,139,131,transfer_ready_q75,Transfer-ready
+10496,0.4593427,141,133,transfer_ready_q75,Transfer-ready
+12281,0.42153734,139,131,transfer_ready_q75,Transfer-ready
+16403,0.4634781,139,131,transfer_ready_q75,Transfer-ready
+25287,0.4003857,140,132,transfer_ready_q75,Transfer-ready
+25300,0.40304092,140,132,transfer_ready_q75,Transfer-ready
+25310,0.4800056,141,133,transfer_ready_q75,Transfer-ready
+25330,0.38842973,141,133,transfer_ready_q75,Transfer-ready
+26918,0.4330293,141,133,transfer_ready_q75,Transfer-ready
+27268,0.43673503,141,133,transfer_ready_q75,Transfer-ready
+27405,0.42967933,141,133,transfer_ready_q75,Transfer-ready
+32524,0.4288804,139,131,transfer_ready_q75,Transfer-ready
+32611,0.4106744,140,132,transfer_ready_q75,Transfer-ready
+32652,0.40530667,140,132,transfer_ready_q75,Transfer-ready
+32723,0.4142492,141,133,transfer_ready_q75,Transfer-ready
+33128,0.4163743,140,132,transfer_ready_q75,Transfer-ready
+33273,0.4863673,139,131,transfer_ready_q75,Transfer-ready
+34537,0.3920464,139,131,transfer_ready_q75,Transfer-ready
+37680,0.49037263,141,133,transfer_ready_q75,Transfer-ready
+37775,0.439216,141,133,transfer_ready_q75,Transfer-ready
+37920,0.5023114,140,132,transfer_ready_q75,Transfer-ready
+37937,0.48321173,139,131,transfer_ready_q75,Transfer-ready
+66118,0.40010756,141,133,transfer_ready_q75,Transfer-ready
+66155,0.39005423,142,134,transfer_ready_q75,Transfer-ready
+66156,0.39197043,142,134,transfer_ready_q75,Transfer-ready
+66369,0.40835026,142,134,transfer_ready_q75,Transfer-ready
+66381,0.42605606,142,134,transfer_ready_q75,Transfer-ready
+66385,0.41127172,141,133,transfer_ready_q75,Transfer-ready
+66393,0.39158252,140,132,transfer_ready_q75,Transfer-ready
+66461,0.39382815,139,131,transfer_ready_q75,Transfer-ready
+66567,0.4425259,142,134,transfer_ready_q75,Transfer-ready
+109298,0.49513113,141,133,transfer_ready_q75,Transfer-ready
