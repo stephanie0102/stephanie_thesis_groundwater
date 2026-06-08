@@ -1,0 +1,5 @@
+model_family,architecture,transfer_mode,source_mode,source_cells,source_train_windows,source_val_windows,target_train_windows,target_train_window_budget,dropout,weight_decay,shared_hidden,context_hidden,target_lr,target_epochs,target_patience,pretrain_lr,pretrain_epochs,pretrain_patience
+Deep Context LSTM (No TL),context_backbone_64_28,no_tl,none,0,0,0,5493,,0.2,,64,28.0,0.0007,28,6,,0,0
+Deep Context LSTM (Always TL),context_backbone_64_28,always_tl,maxsim0.60,160,21760,5760,5493,,0.2,,64,28.0,0.0007,28,6,0.001,12,3
+Baseline LSTM (No TL),baseline_stacked_lstm_128_64_32,no_tl,none,0,0,0,5493,,0.2,0.001,128,,0.001,25,5,,0,0
+Baseline LSTM (TL),baseline_stacked_lstm_128_64_32,always_tl,maxsim0.60,160,21760,5760,5493,,0.2,0.001,128,,0.0005,20,4,0.001,8,3

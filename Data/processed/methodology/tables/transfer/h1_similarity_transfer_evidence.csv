@@ -1,0 +1,18 @@
+metric,value,detail
+n_wells,496.0,final NL target wells with similarity + transfer outcome
+spearman_similarity_vs_transfer_gain,0.06701587826076695,p=0.1361
+spearman_similarity_vs_delta_fixed,-0.06701587826076695,p=0.1361
+mean_transfer_gain,0.010541629707140301,"RMSE_NoTL - RMSE_AlwaysTL, mean over wells"
+fixed_transfer_help_rate,0.5826612903225806,share of wells fixed transfer helps
+fixed_transfer_harm_rate,0.4173387096774194,share of wells fixed transfer harms
+ols_coef_best_similarity,0.05243575164110244,p=0.1176
+ols_coef_target_variability,0.00322637711322987,p=0.2771
+ols_coef_n_test_windows,0.003933798059023956,p=7.722e-16
+ols_r_squared,0.12846126895011512,transfer_gain ~ best_similarity + target_variability + n_test_windows
+ols_r_squared_adj,0.12314700839493287,adjusted R^2
+ols_n,496.0,wells in regression
+selector_similarity_importance_share,0.1495337334669873,share of total selector permutation importance carried by similarity diagnostics
+selector_similarity_best_rank,11.0,best (lowest) importance rank among similarity features
+selector_similarity_features_in_top20,3.0,count of similarity features in top-20 selector importances
+h1_verdict,,partially_supported
+h1_verdict_text,,"H1 is partially supported: source-target similarity is informative, but it is not sufficient as a standalone explanation of transfer success. The pooled site-level association is weak and not significant (Spearman rho = 0.067, p = 0.136) and is in the expected direction (higher similarity -> larger fixed-transfer gain), while similarity diagnostics together account for 15% of the selector's permutation importance and are used as one of several selector inputs."

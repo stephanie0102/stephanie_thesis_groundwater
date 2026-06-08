@@ -1,0 +1,15 @@
+metric,value
+n_harmed_wells,207
+partial_rescue_rate,0.9903381642512077
+full_rescue_rate,0.3864734299516908
+mean_partial_rescue_magnitude,0.03854376869501124
+median_partial_rescue_magnitude,0.031195878982543945
+iqr_partial_rescue_magnitude,0.02477240562438965
+q25_partial_rescue_magnitude,0.02126765251159668
+q75_partial_rescue_magnitude,0.04604005813598633
+share_partial_rescue_gt_0.01_rmse,0.9130434782608695
+share_partial_rescue_gt_0.05_rmse,0.21739130434782608
+share_rel_improvement_gt_1pct,0.8792270531400966
+mean_full_rescue_margin,-0.014652571960347872
+median_full_rescue_margin,-0.008762776851654053
+interpretation,"On 207 fixed-transfer-harmed wells, CASL reduces RMSE relative to Always TL on 99.0% of them (partial rescue), but the typical magnitude is modest: median improvement = 0.031 RMSE, IQR = 0.025. 91% of harmed wells improve by > 0.01 RMSE and 22% by > 0.05 RMSE; 88% improve by > 1% relative to Always TL. CASL fully beats No TL (undoes the damage) on only 38.6% of harmed wells. Interpretation: the 99% partial-rescue rate is real and consistently in the right direction, but it reflects mostly small-to-moderate error reductions (risk control / damage limitation) rather than large rescues; the headline count should be paired with these magnitudes and the lower full-rescue rate."

@@ -1,0 +1,9 @@
+event_definition,threshold,model_family,n_events,tp,fp,fn,tn,recall,precision,f1,false_alarm_rate
+standardized_anomaly_low_negative_tail_ge_1.5,1.5,Context-Aware Selective Learning,1008,86,27,922,15512,0.0853,0.7611,0.1534,0.0017
+standardized_anomaly_low_negative_tail_ge_1.5,1.5,Random Forest,1008,9,6,999,15533,0.0089,0.6,0.0176,0.0004
+standardized_anomaly_low_negative_tail_ge_1.5,1.5,Deep Context LSTM (No TL),1008,69,28,939,15511,0.0685,0.7113,0.1249,0.0018
+standardized_anomaly_low_negative_tail_ge_1.5,1.5,Deep Context LSTM (Always TL),1008,98,31,910,15508,0.0972,0.7597,0.1724,0.002
+standardized_anomaly_high_positive_tail_ge_1.5,1.5,Context-Aware Selective Learning,2313,671,535,1642,13699,0.2901,0.5564,0.3814,0.0376
+standardized_anomaly_high_positive_tail_ge_1.5,1.5,Random Forest,2313,203,211,2110,14023,0.0878,0.4903,0.1489,0.0148
+standardized_anomaly_high_positive_tail_ge_1.5,1.5,Deep Context LSTM (No TL),2313,632,468,1681,13766,0.2732,0.5745,0.3703,0.0329
+standardized_anomaly_high_positive_tail_ge_1.5,1.5,Deep Context LSTM (Always TL),2313,771,809,1542,13425,0.3333,0.488,0.3961,0.0568

@@ -1,9 +1,17 @@
 # Final Netherlands result — interpretation notes
 
 These notes summarise the final Netherlands result after the source-filter
-threshold was reselected from the Netherlands validation/calibration data, not
-inherited from Amsterdam. The thesis target scope and baseline framing
-described below are the canonical versions to quote.
+threshold was reselected on the Netherlands **validation** split, not inherited
+from Amsterdam. The thesis target scope and baseline framing described below are
+the canonical versions to quote.
+
+**Split roles (use this terminology consistently).** *Validation* = source-filter
+threshold selection (the `maxsim0.40` decision); *calibration* = selector (gate)
+training; *test* = final reporting. The source filter is **validation-selected**;
+calibration RMSE enters only as a tie-breaker among near-identical validation
+candidates. Prefer "validation-selected source filter" and avoid
+"validation/calibration-selected", since calibration is reserved for selector
+training.
 
 ## 1. Final framing
 

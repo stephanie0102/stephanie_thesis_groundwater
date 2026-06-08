@@ -1,0 +1,18 @@
+metric,value,note
+casl_rmse_test,2.0925,Context-Aware Selective Learning test RMSE
+rf_rmse_test,2.1538,Random Forest test RMSE
+rmse_test_winner,Context-Aware Selective Learning,lowest test RMSE across all model families (CASL)
+casl_mae_test,0.9093,Context-Aware Selective Learning test MAE
+rf_mae_test,0.8657,Random Forest test MAE
+mae_test_winner,Random Forest,lowest test MAE across all model families (RF)
+casl_r2_test,0.1891,Context-Aware Selective Learning test R2
+rf_r2_test,0.1408,Random Forest test R2
+r2_test_winner,Context-Aware Selective Learning,highest test R2 across all model families
+rf_best_site_count,166,number of wells where RF has the lowest per-site RMSE
+rf_best_site_share,0.3347,share of wells where RF wins per-site RMSE
+casl_best_site_count,39,number of wells where CASL has the lowest per-site RMSE
+casl_best_site_share,0.0786,share of wells where CASL wins per-site RMSE
+most_wells_best_model,Random Forest,model winning the most individual wells (RF)
+rmse_advantage_casl_vs_rf,0.0613,RF test RMSE minus CASL test RMSE (positive = CASL lower / better on RMSE)
+mae_advantage_rf_vs_casl,0.0436,CASL test MAE minus RF test MAE (positive = RF lower / better on MAE)
+selection_rationale,"CASL is preferred on RMSE because this thesis prioritises large-error / extreme-anomaly risk. RMSE penalises the large misses that matter most for drought and flood-relevant groundwater extremes, and CASL attains the lowest test RMSE of all models. RF attains the lowest test MAE and wins the most individual wells, so it is the stronger typical-month / central-tendency model, but its higher RMSE means it is comparatively worse on the rare large-deviation events that this work targets. The two are reported together rather than treating RF's per-well count or MAE lead as a refutation of CASL.",explicit trade-off statement
