@@ -6,6 +6,7 @@ hydropandas
 pandas
 numpy<2          # numpy>=2.0 breaks the prebuilt pandas/pyarrow/sklearn stack used here
 scipy
+pyarrow          # parquet engine for pandas.read_parquet (Level-1 path: repro_utils + EDA + model inputs)
 duckdb
 statsmodels
 
