@@ -256,7 +256,7 @@ def main() -> int:
     required = [(s, ok) for s, ok in report if not s.optional]
     optional = [(s, ok) for s, ok in report if s.optional]
 
-    print("REQUIRED for the final results (Level 1 - committed, no external data needed):")
+    print("REQUIRED for the thesis code pipeline (committed, no external data needed):")
     req_present = 0
     for spec, ok in required:
         if ok:
@@ -264,7 +264,7 @@ def main() -> int:
         print(f"  [{'OK     ' if ok else 'MISSING'}] {spec.relpath:<{width}}  - {spec.label}")
     print(f"  -> {req_present}/{len(required)} required inputs present.")
 
-    print("\nOPTIONAL raw external datasets (Level 2 - only for the raw preprocessing rebuild in EDA):")
+    print("\nOPTIONAL raw external datasets (only for the raw preprocessing rebuild in EDA):")
     for spec, ok in optional:
         print(f"  [{'present' if ok else 'absent '}] {spec.relpath:<{width}}  - {spec.label}")
     print("  -> These are NOT needed to reproduce the final results.")
@@ -275,7 +275,17 @@ def main() -> int:
     missing_required = [s for s, ok in required if not ok]
     if not missing_required and final_ok:
         print("\nAll required inputs are present and the 496-well dataset is valid.")
-        print("-> Run Code/Methodology.ipynb then Code/Results.ipynb to reproduce the final results.")
+        print("\nThesis code pipeline:")
+        print("  1. Code/EDA.ipynb          - prepares and checks the final thesis dataset.")
+        print("                               By default it loads the saved 496-well dataset")
+        print("                               from Data/processed/model_inputs/ (no external")
+        print("                               data needed). The optional raw rebuild needs the")
+        print("                               raw external datasets listed in the README.")
+        print("  2. Code/Methodology.ipynb  - builds and trains the models. NOTE: it retrains")
+        print("                               models and can overwrite the committed result")
+        print("                               files, so run it intentionally and keep backups")
+        print("                               if you want to preserve the committed results.")
+        print("  3. Code/Results.ipynb      - generates the final reported tables and figures.")
         return 0
     if missing_required:
         print("\nMissing REQUIRED inputs for the final results:")
