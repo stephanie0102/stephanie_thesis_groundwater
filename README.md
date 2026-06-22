@@ -13,6 +13,39 @@ The research question is whether forecasting should use **no transfer**,
 split design. The thesis proposes a Context-Aware Selective Learning (CASL) gate
 that decides, per well, how much transfer to apply.
 
+**What CASL does and does not claim.** CASL gives a small but supported RMSE
+improvement over the baselines. Its main contribution is well-level
+transfer-risk control: it reduces the risk of negative transfer by deciding, per
+well, how much transfer to use. It is not a large accuracy breakthrough, and it
+is not a full drought early-warning system.
+
+## Dataset
+
+The final thesis dataset contains **496 monitoring wells**. I use the processed
+model-input files saved in `Data/processed/model_inputs/` for the final analysis.
+These files contain the downloaded and prepared groundwater observations, TSMP-G2A
+groundwater anomalies, COSMO-REA6 precipitation anomalies, GLEAM soil-moisture
+anomalies, and BRO groundwater-use features.
+
+The final analysis starts from these processed parquet files. The raw datasets
+below are only the sources I used to build the processed dataset.
+
+The five data sources are:
+
+1. **BRO groundwater monitoring** (`brogmkenset.gpkg`) — local groundwater
+   observations, the target wells, `water_level_nap_m`, and `wtda`.
+2. **BRO groundwater-use** (`bro_groundwater_use.gpkg`) — pumping-proxy features
+   `pumping_available`, `pumping_m3_month`, `pumping_m3_month_log1p`.
+3. **TSMP-G2A groundwater anomaly** (`TSMP_G2A_..._TSMP_0.1_degree_v1.1996_2016.nc`)
+   — variable `wtd_a`, renamed to `tsmp_wtda`.
+4. **COSMO-REA6 precipitation anomaly** (`COSMO_REA6_..._COSMO_0.1_degree_v1.1995_082019.nc`)
+   — variable `pr_a`.
+5. **GLEAM soil-moisture anomaly** (`GLEAM_..._GLEAM_0.1_degree_v1.1980_2020.nc`)
+   — variable `sm_a`.
+
+`era5_land_monthly.nc` and the CLC (Corine Land Cover) GeoPackage are present
+locally but are **auxiliary** — the final modelling pipeline does not use them.
+
 ---
 
 ## Quick start
@@ -49,21 +82,25 @@ absolute machine-specific paths; the project root is auto-detected.
   small tables derived from the raw external datasets; they already contain all
   model features and **ship with the repo**.
 - **Final Netherlands modelling pipeline** — `Code/Methodology.ipynb` and
-  `Code/Results.ipynb` running on the processed model-input files. This is the
-  canonical pipeline for the thesis results.
-- **Raw preprocessing rebuild** — re-running `Code/EDA.ipynb` from the raw
-  external datasets to regenerate the processed model-input files from scratch.
+  `Code/Results.ipynb` running on the committed processed model-input files. This
+  is the canonical pipeline for the thesis results.
+- **Canonical thesis dataset** — the committed 496-well processed model-input
+  files in `Data/processed/model_inputs/`. This frozen dataset is the canonical
+  input for all final thesis results.
+- **Raw preprocessing (exploratory)** — `Code/EDA.ipynb`. It shows how the raw
+  datasets were prepared. It is **not** required to reproduce the final results.
 
 ### Two levels of reproducibility
 
-- **Level 1 — Final thesis results (no external data needed).** The final
-  Netherlands modelling results can be reproduced from the committed processed
-  model-input files alone: run `Code/Methodology.ipynb` then `Code/Results.ipynb`.
-  No raw external datasets are required.
-- **Level 2 — Full raw preprocessing rebuild (external data needed).**
-  Regenerating the processed model-input files from scratch in `Code/EDA.ipynb`
-  requires the raw external datasets: the TSMP/COSMO/GLEAM `.nc` files and the
-  BRO `.gpkg` files. These are not in GitHub and must be provided separately.
+- **Level 1 — Final thesis results (main path, no external data needed).** The
+  final thesis dataset is the committed 496-well processed model-input files in
+  `Data/processed/model_inputs/`. Reproduce the final results by running
+  `Code/Methodology.ipynb` then `Code/Results.ipynb` on these committed files. No
+  raw external datasets are required. This is the main reproducibility path.
+- **Level 2 — Raw preprocessing (exploratory, external data needed).**
+  `Code/EDA.ipynb` shows how the processed dataset was constructed from the raw
+  datasets (BRO `.gpkg` + TSMP/COSMO/GLEAM `.nc`). It is exploratory and is not
+  part of the final reproducibility path.
 
 ### Required external datasets (not in GitHub — provide separately)
 
@@ -84,10 +121,12 @@ files most likely to be reported as missing on a fresh clone — that is expecte
 
 - `Data/Netherlands_gw_data/` — per-well BRO groundwater record CSVs (the
   Netherlands target panel).
-- `Data/Datasets/era5_land_monthly.nc` — small ERA5-Land reference grid.
+- `Data/Datasets/era5_land_monthly.nc` — small ERA5-Land reference grid
+  (**auxiliary**, not used by the final modelling pipeline).
 - `Data/processed/model_inputs/*.parquet` — the **small processed model-input
-  files** built by the EDA notebook. These let you run the final Netherlands
-  modelling pipeline **without** the raw external datasets.
+  files** built by the EDA notebook (the frozen **496-well canonical thesis
+  dataset**). These let you run the final Netherlands modelling pipeline
+  **without** the raw external datasets.
 - `Data/processed/.../tables/` and `.../figures/` — the saved EDA, methodology,
   and results outputs reported in the thesis.
 
@@ -98,7 +137,7 @@ files most likely to be reported as missing on a fresh clone — that is expecte
 | Final modelling (models, transfer, selector) | `Code/Methodology.ipynb` | `Data/processed/model_inputs/*.parquet` | 1 | **Runs** from the committed processed model-input files |
 | Final figures/tables | `Code/Results.ipynb` | committed methodology tables | 1 | **Runs** from committed outputs |
 | Selector ablation (robustness) | `Code/selector_robustness/run_selector_ablation_production.py` | `Code/Methodology.ipynb` definitions + processed model-input files | 1 | Runs from committed processed inputs |
-| Raw preprocessing rebuild | `Code/EDA.ipynb` | raw external datasets (BRO `.gpkg` + TSMP/COSMO/GLEAM `.nc`) | 2 | If the raw external datasets are absent, EDA continues in **processed-input mode** (reads the committed model-input files); a from-scratch rebuild needs the raw external datasets |
+| Raw preprocessing (exploratory) | `Code/EDA.ipynb` | raw external datasets (BRO `.gpkg` + TSMP/COSMO/GLEAM `.nc`) | 2 | Exploratory only; shows how the processed dataset was built. Not required for the final results. By default it loads and checks the committed 496-well dataset. |
 
 Because the processed model-input files are committed, an examiner can clone the
 repo, run `Code/Methodology.ipynb` then `Code/Results.ipynb`, and reproduce the
@@ -151,18 +190,22 @@ preprocessing rebuild in `Code/EDA.ipynb`.
 
 ## Workflow (Netherlands, default)
 
-1. `python Code/repro_utils.py` — confirm input availability.
-2. `Code/EDA.ipynb` — builds the Netherlands target universe and the processed
-   model-input files (Level-2 raw preprocessing rebuild; needs the raw external
-   datasets). If the raw external datasets are absent, EDA continues in
-   processed-input mode using the committed model-input files. *(Optional for
-   Level-1 reproduction.)*
-3. `Code/Methodology.ipynb` — runs the modelling, transfer comparisons, selector,
-   and robustness analyses on the Netherlands panel.
-4. `Code/Results.ipynb` — produces the final thesis figures and tables.
+**Main path — reproduce the final thesis results (Level 1).** This starts from
+the committed 496-well canonical dataset and needs no external data:
+
+1. `python Code/repro_utils.py` — confirm the committed processed model-input
+   files are present.
+2. `Code/Methodology.ipynb` — runs the modelling, transfer comparisons, selector,
+   and robustness analyses on the committed 496-well Netherlands dataset.
+3. `Code/Results.ipynb` — produces the final thesis figures and tables.
 
 Optional: `python Code/selector_robustness/run_selector_ablation_production.py`
 for the production-consistent selector-input ablation.
+
+**Optional — raw preprocessing (Level 2, exploratory).** `Code/EDA.ipynb` shows
+how the processed model-input files were built from the raw external datasets. By
+default it loads and checks the committed 496-well dataset. It is exploratory and
+is **not** needed for the final results.
 
 ---
 

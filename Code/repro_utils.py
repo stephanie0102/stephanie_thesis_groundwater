@@ -67,6 +67,10 @@ class InputSpec:
 # groundwater CSVs and the small processed model-input parquet files are intended
 # to ship with the repo so that the final Netherlands modelling results can be
 # reproduced without the raw external datasets.
+#
+# Auxiliary files NOT listed here because the final modelling pipeline does not
+# use them: Data/Datasets/era5_land_monthly.nc (ERA5-Land) and any CLC / Corine
+# Land Cover GeoPackage.
 REQUIRED_INPUTS: list[InputSpec] = [
     # --- BRO geospatial (large, NOT in GitHub) ---
     InputSpec(
@@ -106,13 +110,6 @@ REQUIRED_INPUTS: list[InputSpec] = [
         note="FZJ-IBG3 GLEAM product. External NetCDF, provided separately.",
     ),
     # --- Small inputs that DO ship with the repo ---
-    InputSpec(
-        "era5_nc",
-        "Data/Datasets/era5_land_monthly.nc",
-        "ERA5-Land monthly reference grid",
-        on_github=True,
-        note="Small (~1 MB). Committed to the repo.",
-    ),
     InputSpec(
         "nl_gw_dir",
         "Data/Netherlands_gw_data",

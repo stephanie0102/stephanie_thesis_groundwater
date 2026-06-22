@@ -15,9 +15,12 @@ _scratch/
 *.pth
 *.ckpt
 
-# Large raw geospatial inputs are not stored in GitHub (see README data table)
+# Large raw external datasets are not stored in GitHub (see README data table)
 Data/raw/*.gpkg
 *.gpkg
+# Raw climate rasters (TSMP/COSMO/GLEAM NetCDF). Keep the small auxiliary ERA5 grid.
+Data/Datasets/*.nc
+!Data/Datasets/era5_land_monthly.nc
 
 # Parquet is ignored by default (raw/intermediate can be large)...
 *.parquet
