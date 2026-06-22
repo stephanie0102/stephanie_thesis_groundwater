@@ -53,6 +53,7 @@ class InputSpec:
     label: str              # human-readable name
     on_github: bool         # True if the file ships with the repo
     note: str               # where it comes from / why it may be missing
+    optional: bool = False  # True if only needed for the optional raw rebuild
 
     @property
     def path(self) -> Path:
@@ -79,6 +80,7 @@ REQUIRED_INPUTS: list[InputSpec] = [
         "BRO monitoring network GeoPackage (monitoring tubes + GLD series)",
         on_github=False,
         note="BRO bulk download (~180 MB). Too large for GitHub.",
+        optional=True,
     ),
     InputSpec(
         "use_gpkg",
@@ -86,6 +88,7 @@ REQUIRED_INPUTS: list[InputSpec] = [
         "BRO groundwater-use / pumping GeoPackage",
         on_github=False,
         note="BRO bulk download (~48 MB). Too large for GitHub.",
+        optional=True,
     ),
     # --- FZJ-IBG3 monthly anomaly rasters (large, NOT in GitHub) ---
     InputSpec(
@@ -94,6 +97,7 @@ REQUIRED_INPUTS: list[InputSpec] = [
         "TSMP groundwater-table-depth anomaly (source/pretraining signal)",
         on_github=False,
         note="FZJ-IBG3 TSMP-G2A product. External NetCDF, provided separately.",
+        optional=True,
     ),
     InputSpec(
         "cosmo_nc",
@@ -101,6 +105,7 @@ REQUIRED_INPUTS: list[InputSpec] = [
         "COSMO-REA6 precipitation anomaly",
         on_github=False,
         note="FZJ-IBG3 COSMO-REA6 product. External NetCDF, provided separately.",
+        optional=True,
     ),
     InputSpec(
         "gleam_nc",
@@ -108,6 +113,7 @@ REQUIRED_INPUTS: list[InputSpec] = [
         "GLEAM soil-moisture anomaly",
         on_github=False,
         note="FZJ-IBG3 GLEAM product. External NetCDF, provided separately.",
+        optional=True,
     ),
     # --- Small inputs that DO ship with the repo ---
     InputSpec(
@@ -214,44 +220,68 @@ def availability_report(keys: Iterable[str] | None = None) -> list[tuple[InputSp
     return [(spec, spec.path.exists()) for spec in specs]
 
 
+def check_final_dataset() -> bool:
+    """Load the committed 496-well finetune table and verify its shape and key
+    columns. Returns True if the canonical dataset looks correct."""
+    spec = REQUIRED_BY_KEY["finetune_supervised"]
+    if not spec.path.exists():
+        print("\nFinal dataset check: SKIPPED (finetune_supervised_table.parquet missing).")
+        return False
+    try:
+        import pandas as pd
+        df = pd.read_parquet(spec.path)
+    except Exception as exc:  # pragma: no cover - environment dependent
+        print(f"\nFinal dataset check: could not load parquet ({exc}).")
+        return False
+    n_wells = df["site_id"].nunique()
+    key_cols = ["wtda", "tsmp_wtda", "pr_a", "sm_a", "pumping_available",
+                "pumping_m3_month_log1p"]
+    checks = {
+        "wells == 496": n_wells == 496,
+        "shape == (100472, 30)": df.shape == (100472, 30),
+        "key columns present": all(c in df.columns for c in key_cols),
+    }
+    print("\nFinal 496-well dataset check (Data/processed/model_inputs/finetune_supervised_table.parquet):")
+    print(f"  wells: {n_wells} | shape: {df.shape}")
+    for name, ok in checks.items():
+        print(f"  [{'PASS' if ok else 'FAIL'}] {name}")
+    return all(checks.values())
+
+
 def main() -> int:
     print(f"Repository root: {ROOT}")
-    print(f"Default analysis target: Netherlands panel\n")
+    print(f"Default analysis target: Netherlands panel (committed 496-well dataset)\n")
     report = availability_report()
     width = max(len(spec.relpath) for spec, _ in report)
-    present = 0
-    for spec, ok in report:
-        status = "OK     " if ok else "MISSING"
-        if ok:
-            present += 1
-        tag = "github" if spec.on_github else "external"
-        print(f"[{status}] ({tag:8s}) {spec.relpath:<{width}}  - {spec.label}")
-    print(f"\n{present}/{len(report)} required inputs present.")
+    required = [(s, ok) for s, ok in report if not s.optional]
+    optional = [(s, ok) for s, ok in report if s.optional]
 
-    missing_external = [s for s, ok in report if not ok and not s.on_github]
-    missing_github = [s for s, ok in report if not ok and s.on_github]
-    if missing_external:
-        print("\nExternal files to provide separately (not in GitHub):")
-        for spec in missing_external:
+    print("REQUIRED for the final results (Level 1 - committed, no external data needed):")
+    req_present = 0
+    for spec, ok in required:
+        if ok:
+            req_present += 1
+        print(f"  [{'OK     ' if ok else 'MISSING'}] {spec.relpath:<{width}}  - {spec.label}")
+    print(f"  -> {req_present}/{len(required)} required inputs present.")
+
+    print("\nOPTIONAL raw external datasets (Level 2 - only for the raw preprocessing rebuild in EDA):")
+    for spec, ok in optional:
+        print(f"  [{'present' if ok else 'absent '}] {spec.relpath:<{width}}  - {spec.label}")
+    print("  -> These are NOT needed to reproduce the final results.")
+
+    # Verify the canonical 496-well dataset actually loads with the right columns.
+    final_ok = check_final_dataset()
+
+    missing_required = [s for s, ok in required if not ok]
+    if not missing_required and final_ok:
+        print("\nAll required inputs are present and the 496-well dataset is valid.")
+        print("-> Run Code/Methodology.ipynb then Code/Results.ipynb to reproduce the final results.")
+        return 0
+    if missing_required:
+        print("\nMissing REQUIRED inputs for the final results:")
+        for spec in missing_required:
             print(f"  - {spec.relpath}\n      {spec.note}")
-    if missing_github:
-        print("\nFiles that should ship with the repo but are missing locally:")
-        for spec in missing_github:
-            print(f"  - {spec.relpath}")
-    if not missing_external and not missing_github:
-        print("\nAll required inputs are available. The full pipeline can run.")
-    elif not missing_github and all(
-        REQUIRED_BY_KEY[k].path.exists() for k in PROCESSED_MODEL_INPUTS
-    ):
-        print(
-            "\nThe raw external datasets are not present, but the processed "
-            "model-input files are:\n  -> the final Netherlands modelling pipeline "
-            "(Methodology.ipynb, Results.ipynb) can run and reproduce the final "
-            "results. This is sufficient for the final results, but not for "
-            "rebuilding the preprocessing/EDA from scratch (that needs the raw "
-            "external datasets)."
-        )
-    return 0 if all(ok for _, ok in report) else 1
+    return 1
 
 
 if __name__ == "__main__":

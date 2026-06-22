@@ -94,9 +94,14 @@ absolute machine-specific paths; the project root is auto-detected.
 
 - **Level 1 — Final thesis results (main path, no external data needed).** The
   final thesis dataset is the committed 496-well processed model-input files in
-  `Data/processed/model_inputs/`. Reproduce the final results by running
-  `Code/Methodology.ipynb` then `Code/Results.ipynb` on these committed files. No
-  raw external datasets are required. This is the main reproducibility path.
+  `Data/processed/model_inputs/`. Reproduce the final reported tables and figures
+  by: (1) `python Code/repro_utils.py` to confirm the committed inputs; (2)
+  optionally `Code/EDA.ipynb` with `RUN_RAW_REBUILD = False` to load and check the
+  committed 496-well dataset; (3) `Code/Results.ipynb` to rebuild the final tables
+  and figures from the committed result artifacts. No raw external datasets and no
+  model training are required. **`Code/Methodology.ipynb` is the training notebook
+  and is not part of this quick reproduction path** — it retrains models and can
+  overwrite the committed result tables (see below).
 - **Level 2 — Raw preprocessing (exploratory, external data needed).**
   `Code/EDA.ipynb` shows how the processed dataset was constructed from the raw
   datasets (BRO `.gpkg` + TSMP/COSMO/GLEAM `.nc`). It is exploratory and is not
@@ -132,18 +137,21 @@ files most likely to be reported as missing on a fresh clone — that is expecte
 
 ### What can be reproduced, and from what
 
-| Stage | Notebook / script | Needs | Level | Status without raw external data |
+| Stage | Notebook / script | Needs | Level | Notes |
 |---|---|---|---|---|
-| Final modelling (models, transfer, selector) | `Code/Methodology.ipynb` | `Data/processed/model_inputs/*.parquet` | 1 | **Runs** from the committed processed model-input files |
-| Final figures/tables | `Code/Results.ipynb` | committed methodology tables | 1 | **Runs** from committed outputs |
+| Input check | `python Code/repro_utils.py` | committed processed model-input files | 1 | Confirms the committed 496-well inputs are present and valid |
+| Reproduce final tables/figures | `Code/Results.ipynb` | committed methodology result tables | 1 | **Main reproduction step.** Rebuilds the final tables/figures from committed artifacts; no training |
+| Training / model building | `Code/Methodology.ipynb` | `Data/processed/model_inputs/*.parquet` | — | **Retrains models and can overwrite the committed result tables.** Not part of the quick reproduction path; run only to rebuild the models |
 | Selector ablation (robustness) | `Code/selector_robustness/run_selector_ablation_production.py` | `Code/Methodology.ipynb` definitions + processed model-input files | 1 | Runs from committed processed inputs |
 | Raw preprocessing (exploratory) | `Code/EDA.ipynb` | raw external datasets (BRO `.gpkg` + TSMP/COSMO/GLEAM `.nc`) | 2 | Exploratory only; shows how the processed dataset was built. Not required for the final results. By default it loads and checks the committed 496-well dataset. |
 
-Because the processed model-input files are committed, an examiner can clone the
-repo, run `Code/Methodology.ipynb` then `Code/Results.ipynb`, and reproduce the
-**final Netherlands thesis tables and figures without any external download
-(Level 1)**. The raw external datasets are required only for the Level-2 raw
-preprocessing rebuild in `Code/EDA.ipynb`.
+Because the processed model-input files and the result tables are committed, an
+examiner can clone the repo and run `Code/Results.ipynb` to reproduce the **final
+Netherlands thesis tables and figures without any external download and without
+training (Level 1)**. `Code/Methodology.ipynb` is the training notebook; it
+retrains models and can overwrite the committed result tables, so it is not part
+of the quick reproduction path. The raw external datasets are required only for
+the Level-2 raw preprocessing rebuild in `Code/EDA.ipynb`.
 
 > No private Google Drive / OneDrive links are included here. If raw data needs
 > to be shared, that will be arranged separately.
@@ -191,16 +199,22 @@ preprocessing rebuild in `Code/EDA.ipynb`.
 ## Workflow (Netherlands, default)
 
 **Main path — reproduce the final thesis results (Level 1).** This starts from
-the committed 496-well canonical dataset and needs no external data:
+the committed 496-well canonical dataset and needs no external data and no
+training:
 
 1. `python Code/repro_utils.py` — confirm the committed processed model-input
-   files are present.
-2. `Code/Methodology.ipynb` — runs the modelling, transfer comparisons, selector,
-   and robustness analyses on the committed 496-well Netherlands dataset.
-3. `Code/Results.ipynb` — produces the final thesis figures and tables.
+   files are present and the 496-well dataset is valid.
+2. *(optional)* `Code/EDA.ipynb` with `RUN_RAW_REBUILD = False` — load and check
+   the committed 496-well dataset.
+3. `Code/Results.ipynb` — rebuild the final thesis tables and figures from the
+   committed result artifacts.
 
-Optional: `python Code/selector_robustness/run_selector_ablation_production.py`
-for the production-consistent selector-input ablation.
+**Training / model building (not the default reproduction step).**
+`Code/Methodology.ipynb` is the notebook that builds and trains the models. **It
+retrains models and can overwrite the committed result tables**, so run it only
+when you want to rebuild the models — not as part of the quick reproduction above.
+The selector ablation `python Code/selector_robustness/run_selector_ablation_production.py`
+is part of this training/robustness work.
 
 **Optional — raw preprocessing (Level 2, exploratory).** `Code/EDA.ipynb` shows
 how the processed model-input files were built from the raw external datasets. By
