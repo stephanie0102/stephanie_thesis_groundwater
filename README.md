@@ -41,6 +41,30 @@ their own licences.
 All paths below are **relative to the repository root**. Nothing in the code uses
 absolute machine-specific paths; the project root is auto-detected.
 
+### Terminology (used consistently across this repo)
+
+- **Raw external datasets** — the TSMP / COSMO / GLEAM NetCDF (`.nc`) files and
+  the BRO GeoPackage (`.gpkg`) files. Large, externally sourced, **not in GitHub**.
+- **Processed model-input files** — `Data/processed/model_inputs/*.parquet`. The
+  small tables derived from the raw external datasets; they already contain all
+  model features and **ship with the repo**.
+- **Final Netherlands modelling pipeline** — `Code/Methodology.ipynb` and
+  `Code/Results.ipynb` running on the processed model-input files. This is the
+  canonical pipeline for the thesis results.
+- **Raw preprocessing rebuild** — re-running `Code/EDA.ipynb` from the raw
+  external datasets to regenerate the processed model-input files from scratch.
+
+### Two levels of reproducibility
+
+- **Level 1 — Final thesis results (no external data needed).** The final
+  Netherlands modelling results can be reproduced from the committed processed
+  model-input files alone: run `Code/Methodology.ipynb` then `Code/Results.ipynb`.
+  No raw external datasets are required.
+- **Level 2 — Full raw preprocessing rebuild (external data needed).**
+  Regenerating the processed model-input files from scratch in `Code/EDA.ipynb`
+  requires the raw external datasets: the TSMP/COSMO/GLEAM `.nc` files and the
+  BRO `.gpkg` files. These are not in GitHub and must be provided separately.
+
 ### Required external datasets (not in GitHub — provide separately)
 
 | Dataset | Expected local path | Notes |
@@ -51,9 +75,10 @@ absolute machine-specific paths; the project root is auto-detected.
 | **COSMO** precipitation anomaly | `Data/Datasets/COSMO_REA6_monthly_precipitation_anomaly_FZJ-IBG3_COSMO_0.1_degree_v1.1995_082019.nc` | FZJ-IBG3 COSMO-REA6 NetCDF |
 | **GLEAM** soil-moisture anomaly | `Data/Datasets/GLEAM_monthly_soil_moisture_anomaly_FZJ-IBG3_GLEAM_0.1_degree_v1.1980_2020.nc` | FZJ-IBG3 GLEAM NetCDF |
 
-These TSMP / COSMO / GLEAM rasters and the two BRO GeoPackages must be placed at
-the paths above before the **full** EDA can be re-run from raw data. They are the
-files most likely to be reported as missing on a fresh clone.
+These raw external datasets (TSMP / COSMO / GLEAM `.nc` and the two BRO `.gpkg`)
+are required **only for the Level-2 raw preprocessing rebuild** in `Code/EDA.ipynb`.
+They are **not** needed for the final Netherlands modelling pipeline. They are the
+files most likely to be reported as missing on a fresh clone — that is expected.
 
 ### Datasets that ship with the repository
 
@@ -61,25 +86,25 @@ files most likely to be reported as missing on a fresh clone.
   Netherlands target panel).
 - `Data/Datasets/era5_land_monthly.nc` — small ERA5-Land reference grid.
 - `Data/processed/model_inputs/*.parquet` — the **small processed model-input
-  tables** built by the EDA notebook. These let you run the methodology and
-  results stages **without** downloading the heavy raw rasters.
+  files** built by the EDA notebook. These let you run the final Netherlands
+  modelling pipeline **without** the raw external datasets.
 - `Data/processed/.../tables/` and `.../figures/` — the saved EDA, methodology,
   and results outputs reported in the thesis.
 
 ### What can be reproduced, and from what
 
-| Stage | Notebook / script | Needs | Status without raw data |
-|---|---|---|---|
-| EDA (build model inputs) | `Code/EDA.ipynb` | BRO GeoPackages + TSMP/COSMO/GLEAM | Falls back to the committed processed parquet if rasters are missing; full raster-based rebuild needs the external files |
-| Methodology (models, transfer, selector) | `Code/Methodology.ipynb` | `Data/processed/model_inputs/*.parquet` | **Runs** from the committed processed inputs |
-| Results (final figures/tables) | `Code/Results.ipynb` | committed methodology tables | **Runs** from committed outputs |
-| Selector ablation (robustness) | `Code/selector_robustness/run_selector_ablation_production.py` | `Code/Methodology.ipynb` definitions + model inputs | Runs if model inputs present |
+| Stage | Notebook / script | Needs | Level | Status without raw external data |
+|---|---|---|---|---|
+| Final modelling (models, transfer, selector) | `Code/Methodology.ipynb` | `Data/processed/model_inputs/*.parquet` | 1 | **Runs** from the committed processed model-input files |
+| Final figures/tables | `Code/Results.ipynb` | committed methodology tables | 1 | **Runs** from committed outputs |
+| Selector ablation (robustness) | `Code/selector_robustness/run_selector_ablation_production.py` | `Code/Methodology.ipynb` definitions + processed model-input files | 1 | Runs from committed processed inputs |
+| Raw preprocessing rebuild | `Code/EDA.ipynb` | raw external datasets (BRO `.gpkg` + TSMP/COSMO/GLEAM `.nc`) | 2 | If the raw external datasets are absent, EDA continues in **processed-input mode** (reads the committed model-input files); a from-scratch rebuild needs the raw external datasets |
 
-Because the processed `model_inputs/*.parquet` are committed, an examiner can
-clone the repo, run `Code/Methodology.ipynb` then `Code/Results.ipynb`, and
-reproduce the **final thesis tables and figures without any external download**.
-The external TSMP/COSMO/GLEAM/BRO files are only required to rebuild those
-processed inputs from scratch in `Code/EDA.ipynb`.
+Because the processed model-input files are committed, an examiner can clone the
+repo, run `Code/Methodology.ipynb` then `Code/Results.ipynb`, and reproduce the
+**final Netherlands thesis tables and figures without any external download
+(Level 1)**. The raw external datasets are required only for the Level-2 raw
+preprocessing rebuild in `Code/EDA.ipynb`.
 
 > No private Google Drive / OneDrive links are included here. If raw data needs
 > to be shared, that will be arranged separately.
@@ -128,8 +153,10 @@ processed inputs from scratch in `Code/EDA.ipynb`.
 
 1. `python Code/repro_utils.py` — confirm input availability.
 2. `Code/EDA.ipynb` — builds the Netherlands target universe and the processed
-   model inputs. (Needs the external rasters/GeoPackages for a full rebuild; if
-   they are absent it falls back to the committed processed parquet.)
+   model-input files (Level-2 raw preprocessing rebuild; needs the raw external
+   datasets). If the raw external datasets are absent, EDA continues in
+   processed-input mode using the committed model-input files. *(Optional for
+   Level-1 reproduction.)*
 3. `Code/Methodology.ipynb` — runs the modelling, transfer comparisons, selector,
    and robustness analyses on the Netherlands panel.
 4. `Code/Results.ipynb` — produces the final thesis figures and tables.

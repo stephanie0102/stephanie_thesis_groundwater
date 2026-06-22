@@ -39,7 +39,7 @@ def find_project_root(start: Path | None = None) -> Path:
             # The repo root is the directory that contains both Code/ and Data/.
             if (candidate / "Code").exists() and (candidate / "Data").exists():
                 return candidate
-    # Fallback: two levels up from this file (Code/repro_utils.py -> repo root).
+    # Default: two levels up from this file (Code/repro_utils.py -> repo root).
     return Path(__file__).resolve().parents[1]
 
 
@@ -62,10 +62,11 @@ class InputSpec:
 # ---------------------------------------------------------------------------
 # Registry of required inputs for the Netherlands pipeline.
 # ---------------------------------------------------------------------------
-# Large raw rasters and the BRO GeoPackages are NOT stored in GitHub (size /
-# external licensing). The per-well groundwater CSVs and the small processed
-# parquet model-inputs are intended to ship with the repo so that the final
-# tables can be reproduced without the heavy raw downloads.
+# The raw external datasets (TSMP/COSMO/GLEAM NetCDF rasters and the BRO
+# GeoPackages) are NOT stored in GitHub (size / external licensing). The per-well
+# groundwater CSVs and the small processed model-input parquet files are intended
+# to ship with the repo so that the final Netherlands modelling results can be
+# reproduced without the raw external datasets.
 REQUIRED_INPUTS: list[InputSpec] = [
     # --- BRO geospatial (large, NOT in GitHub) ---
     InputSpec(
@@ -123,16 +124,16 @@ REQUIRED_INPUTS: list[InputSpec] = [
     InputSpec(
         "pretrain_supervised",
         "Data/processed/model_inputs/pretrain_supervised_table.parquet",
-        "Processed source/pretraining table (built by EDA from the raw rasters)",
+        "Processed source/pretraining table (built by EDA from the raw external datasets)",
         on_github=True,
-        note="~9 MB. Lets Methodology/Results run WITHOUT the raw rasters.",
+        note="~9 MB. Lets Methodology/Results run WITHOUT the raw external datasets.",
     ),
     InputSpec(
         "finetune_supervised",
         "Data/processed/model_inputs/finetune_supervised_table.parquet",
         "Processed Netherlands target table (built by EDA)",
         on_github=True,
-        note="~3 MB. Lets Methodology/Results run WITHOUT the raw rasters.",
+        note="~3 MB. Lets Methodology/Results run WITHOUT the raw external datasets.",
     ),
     InputSpec(
         "monthly_local",
@@ -246,9 +247,12 @@ def main() -> int:
         REQUIRED_BY_KEY[k].path.exists() for k in PROCESSED_MODEL_INPUTS
     ):
         print(
-            "\nThe raw rasters/GeoPackages are missing, but the processed model "
-            "inputs are present:\n  -> Methodology.ipynb and Results.ipynb can run; "
-            "EDA.ipynb will use the processed-baseline fallback."
+            "\nThe raw external datasets are not present, but the processed "
+            "model-input files are:\n  -> the final Netherlands modelling pipeline "
+            "(Methodology.ipynb, Results.ipynb) can run and reproduce the final "
+            "results. This is sufficient for the final results, but not for "
+            "rebuilding the preprocessing/EDA from scratch (that needs the raw "
+            "external datasets)."
         )
     return 0 if all(ok for _, ok in report) else 1
 
