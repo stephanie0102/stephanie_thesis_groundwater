@@ -10,6 +10,18 @@ _scratch/
 
 *.nbconvert.ipynb
 
+# Model checkpoints (never commit large weights)
+*.pt
+*.pth
+*.ckpt
+
+# Large raw geospatial inputs are not stored in GitHub (see README data table)
 Data/raw/*.gpkg
 *.gpkg
+
+# Parquet is ignored by default (raw/intermediate can be large)...
 *.parquet
+# ...but the small processed model-input tables ARE committed so that
+# Methodology.ipynb / Results.ipynb can reproduce the final thesis outputs
+# without downloading the heavy raw rasters. See README "Data availability".
+!Data/processed/model_inputs/*.parquet

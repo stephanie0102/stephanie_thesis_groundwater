@@ -43,7 +43,9 @@ import matplotlib.pyplot as plt
 
 warnings.filterwarnings("ignore")
 
-REPO = Path("/Users/izhan/Desktop/groundwater/stephanie_thesis_groundwater")
+# Resolve the repository root relative to this file so the script is portable:
+# Code/selector_robustness/run_selector_ablation_production.py -> repo root is two levels up.
+REPO = Path(__file__).resolve().parents[2]
 NB = REPO / "Code" / "Methodology.ipynb"
 ROBUST = REPO / "Data/processed/methodology/tables/robustness"
 FIGDIR = REPO / "Data/processed/results/figures"

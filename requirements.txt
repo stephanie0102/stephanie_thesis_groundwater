@@ -4,8 +4,18 @@
 # Data Acquisition & Processing
 hydropandas
 pandas
-numpy
+numpy<2          # numpy>=2.0 breaks the prebuilt pandas/pyarrow/sklearn stack used here
 scipy
+duckdb
+statsmodels
+
+# Geospatial (BRO GeoPackages and climate rasters)
+geopandas
+fiona
+pyogrio
+shapely
+xarray
+netcdf4
 
 # Deep Learning (ST-PatchTST & GAT)
 torch
