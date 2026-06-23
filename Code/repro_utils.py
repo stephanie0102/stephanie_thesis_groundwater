@@ -70,8 +70,7 @@ class InputSpec:
 # reproduced without the raw external datasets.
 #
 # Auxiliary files NOT listed here because the final modelling pipeline does not
-# use them: Data/Datasets/era5_land_monthly.nc (ERA5-Land) and any CLC / Corine
-# Land Cover GeoPackage.
+# use them (e.g. any CLC / Corine Land Cover GeoPackage).
 REQUIRED_INPUTS: list[InputSpec] = [
     # --- BRO geospatial (large, NOT in GitHub) ---
     InputSpec(
