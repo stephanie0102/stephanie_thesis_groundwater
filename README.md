@@ -67,14 +67,22 @@ folder:
 
 https://drive.google.com/drive/folders/15gmZoAzqh4nt2hRrfALUoGn-KzzaU85B?usp=sharing
 
-These three files are only used by the optional rebuild in EDA. The final 496-well
-dataset is already in the repo, so you do not need them to reproduce the final
-tables and figures. If you want to run the rebuild, put the three files in
-`Data/Datasets/`.
+These three NetCDF files are only used by the optional rebuild in EDA. The final
+496-well dataset is already in the repo, so you do **not** need them — or any raw
+file — to reproduce the final tables and figures.
 
-The two BRO files (`brogmkenset.gpkg` and `bro_groundwater_use.gpkg`) are **not** in
-the Google Drive folder. The BRO observations and groundwater-use features that the
-final experiments need are already inside the processed parquet files.
+If you do want to run the optional rebuild, it needs three things:
+- the per-well BRO CSVs in `Data/Netherlands_gw_data/` — these are already in the
+  repo;
+- the three NetCDF files above — download them from the Google Drive folder into
+  `Data/Datasets/`;
+- the two BRO GeoPackages (`brogmkenset.gpkg` and `bro_groundwater_use.gpkg`) —
+  these are **not** in the repo and **not** in the Google Drive folder, so you would
+  have to get them from BRO / DINOloket yourself.
+
+So the Google Drive folder alone is not enough to run the rebuild. None of this is
+needed for the final results: the committed processed files already contain the BRO
+observations and groundwater-use features.
 
 All paths in the code are relative to the repo root, so nothing depends on my
 computer.
