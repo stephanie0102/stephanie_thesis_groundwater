@@ -5,11 +5,15 @@ threshold was reselected on the Netherlands **validation** split, not inherited
 from Amsterdam. The thesis target scope and baseline framing described below are
 the canonical versions to quote.
 
+**Naming note.** "SARP-style" was an earlier internal label for the Baseline LSTM
+baselines reported in the thesis; the final thesis refers to these models as
+Baseline LSTM (No TL) and Baseline LSTM (TL).
+
 **Split roles (use this terminology consistently).** *Validation* = source-filter
 threshold selection (the `maxsim0.40` decision); *calibration* = selector (gate)
-training; *test* = final reporting. The source filter is **validation-selected**;
-calibration RMSE enters only as a tie-breaker among near-identical validation
-candidates. Prefer "validation-selected source filter" and avoid
+training; *test* = final reporting. The source filter is **validation-selected**:
+`maxsim0.40` is selected by validation RMSE; calibration is not used to choose the
+final source-filter threshold and remains reserved for selector training. Prefer "validation-selected source filter" and avoid
 "validation/calibration-selected", since calibration is reserved for selector
 training.
 
@@ -43,7 +47,8 @@ training.
 - **Source-filter rule (final).** `maxsim0.40` — selected by minimum
   *validation* RMSE of Context-Aware Selective Learning across four candidate
   filters (no_filter / 0.40 / 0.50 / 0.60) on the Netherlands target.
-  Calibration RMSE acts as tie-breaker. Test RMSE was NOT used to choose
+  Calibration is not used to choose the final source-filter threshold and remains
+  reserved for selector training. Test RMSE was NOT used to choose
   the filter. The Amsterdam-publication `maxsim0.60` rule is retained as a
   *legacy / sensitivity* point only. See
   `Data/processed/methodology/tables/source_filter_selection/selected_source_filter_protocol.csv`.
