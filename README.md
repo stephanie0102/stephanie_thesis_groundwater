@@ -115,6 +115,11 @@ computer.
   - `amsterdam_reference/` — old Amsterdam outputs, kept only for the scope-change
     discussion.
 
+After the main thesis runs, an additional Netherlands 5-seed aggregate stability check
+is provided under `Code/final_checks/run_nl_seed_stability.py`. Its outputs are saved in
+`Data/processed/results/final_checks/`. This is a supporting robustness check for the
+thesis discussion and does not replace or change the main fixed-seed result tables.
+
 ## Amsterdam (earlier scope)
 
 The project started as an Amsterdam-only study. Only the saved Amsterdam outputs in
